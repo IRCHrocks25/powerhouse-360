@@ -1,0 +1,1023 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Powerhouse360 — Yasmine Mardelli · Strategic Growth &amp; Leadership Advisor</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600;9..40,700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --red:#E11212;
+  --red-deep:#B40D0D;
+  --ink:#141414;
+  --ink-2:#1E1E1E;
+  --ink-3:#262626;
+  --line-d:rgba(255,255,255,0.10);
+  --line-l:rgba(20,20,20,0.10);
+  --white:#FFFFFF;
+  --paper:#F4F5F7;
+  --paper-2:#ECEEF1;
+  --muted:#6A6F78;
+  --muted-d:rgba(255,255,255,0.62);
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;font-size:108%;-webkit-text-size-adjust:100%;text-size-adjust:100%;overflow-x:hidden;}
+body{font-family:'DM Sans',sans-serif;font-weight:400;color:var(--ink);background:var(--white);overflow-x:hidden;line-height:1.7;-webkit-font-smoothing:antialiased;}
+a{text-decoration:none;color:inherit;}
+img{display:block;max-width:100%;}
+
+.display{font-family:'Bebas Neue',sans-serif;font-weight:400;line-height:0.92;letter-spacing:0.01em;text-transform:uppercase;}
+.d-xl{font-size:clamp(3rem,7.2vw,6.4rem);}
+.d-lg{font-size:clamp(2.4rem,5vw,4.6rem);}
+.d-md{font-size:clamp(1.9rem,3.4vw,3rem);}
+.d-sm{font-size:clamp(1.5rem,2.4vw,2.1rem);}
+.red{color:var(--red);}
+
+/* orphan / widow control — no single word stranded on its own line */
+h1,h2,h3,.display,.acc-ttl,.testi .big,.m-card-bd h3,.offer-card h3,.split-tx h2,.pop-head h3,.fit-col h4,.split-img .qt,.trust-quote,.method-quote p{text-wrap:balance;}
+p,.lead,.hero-sub,.hero-body,.hero-micro,.stat .cap,.m-card-bd p,.m-walk,.testi p,.acc-body p,.offer-text p,.offer-feat span,.offer-card>p,.audit-l>p,.audit-list li,.apply-l p,.close>.sub,.close-list li,.ft-brand p,.hs-cell p,.creds-item,.fit-li span,.cmp-row span,.pop-bd>p,.pop-list li{text-wrap:pretty;}
+
+.tag{display:inline-flex;align-items:center;gap:8px;font-size:0.66rem;font-weight:700;letter-spacing:0.22em;text-transform:uppercase;color:var(--red);font-family:'DM Sans',sans-serif;}
+.tag::before{content:'[';font-weight:400;opacity:0.8;}
+.tag::after{content:']';font-weight:400;opacity:0.8;}
+.tag.on-dark{color:#FF4040;}
+
+.lead{font-size:1.02rem;font-weight:400;line-height:1.78;color:var(--muted);}
+.on-dark .lead,.dark .lead{color:var(--muted-d);}
+
+.btn{display:inline-flex;align-items:center;gap:14px;font-family:'DM Sans',sans-serif;font-size:0.74rem;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;padding:17px 30px;border:1.5px solid transparent;cursor:pointer;transition:background .25s,color .25s,border-color .25s,transform .25s;}
+.btn .ar{font-size:0.95rem;line-height:1;transition:transform .25s;}
+.btn:hover .ar{transform:translateX(4px);}
+.btn-red{background:var(--red);color:#fff;border-color:var(--red);}
+.btn-red:hover{background:var(--red-deep);border-color:var(--red-deep);}
+.btn-dark{background:var(--ink);color:#fff;border-color:var(--ink);}
+.btn-dark:hover{background:var(--red);border-color:var(--red);}
+.btn-ghost{background:transparent;color:var(--ink);border-color:rgba(20,20,20,0.25);}
+.btn-ghost:hover{border-color:var(--ink);}
+.btn-ghost.lt{color:#fff;border-color:rgba(255,255,255,0.3);}
+.btn-ghost.lt:hover{border-color:#fff;background:rgba(255,255,255,0.06);}
+
+
+nav{position:absolute;top:0;left:0;right:0;z-index:200;background:transparent;display:flex;align-items:center;justify-content:space-between;padding:0 clamp(20px,4vw,48px);height:78px;border-bottom:none;transition:background .35s ease,height .35s ease,box-shadow .35s ease;}
+.logo{display:flex;align-items:center;gap:11px;}
+.logo .mk{width:34px;height:34px;background:var(--red);color:#fff;display:flex;align-items:center;justify-content:center;font-family:'Bebas Neue',sans-serif;font-size:1.15rem;letter-spacing:0.02em;}
+.logo .tx{display:flex;flex-direction:column;line-height:1;}
+.logo .tx b{font-family:'Bebas Neue',sans-serif;font-weight:400;font-size:1.32rem;letter-spacing:0.03em;color:#fff;transition:color .35s ease;}
+.logo .tx span{font-size:0.56rem;font-weight:600;letter-spacing:0.2em;text-transform:uppercase;color:rgba(255,255,255,0.7);margin-top:2px;transition:color .35s ease;}
+.nav-right{display:flex;align-items:center;gap:20px;}
+.nav-phone{font-size:0.82rem;font-weight:600;color:#fff;letter-spacing:0.02em;white-space:nowrap;transition:color .35s ease;}
+.nav-cta{background:var(--red);color:#fff;font-size:0.7rem;font-weight:700;letter-spacing:0.16em;text-transform:uppercase;padding:12px 22px;transition:background .25s;}
+.nav-cta:hover{background:var(--red-deep);}
+/* solid state once scrolled past the hero */
+nav.scrolled{background:var(--ink);height:70px;border-bottom-color:var(--line-d);box-shadow:0 8px 30px rgba(0,0,0,0.25);}
+
+
+.hero{position:relative;background:var(--ink);color:#fff;min-height:115vh;display:flex;flex-direction:column;justify-content:flex-end;overflow:hidden;}
+.hero-bg{position:absolute;inset:0;z-index:0;}
+.hero-bg img{width:100%;height:100%;object-fit:cover;object-position:center;opacity:1;}
+.hero-bg::after{content:'';position:absolute;inset:0;background:linear-gradient(90deg,rgba(20,20,20,0.92) 0%,rgba(20,20,20,0.75) 38%,rgba(20,20,20,0.15) 65%,transparent 100%);}
+.hero-inner{position:relative;z-index:2;max-width:none;width:100%;margin:0;padding:180px clamp(20px,4vw,48px) 80px clamp(24px,3vw,56px);flex:1;display:flex;flex-direction:column;justify-content:center;}
+.hero-tag{margin-bottom:26px;}
+.hero h1{max-width:none;margin-bottom:24px;}
+.hero h1 .display{font-size:clamp(2.8rem,6.6vw,6rem);}
+.hero-sub{font-size:clamp(1.05rem,1.6vw,1.32rem);font-weight:400;color:rgba(255,255,255,0.86);max-width:42ch;line-height:1.5;margin-bottom:18px;}
+.hero-body{font-size:1rem;color:rgba(255,255,255,0.66);max-width:46ch;line-height:1.7;margin-bottom:34px;}
+.hero-btns{display:flex;gap:16px;flex-wrap:wrap;align-items:center;}
+.hero-micro{margin-top:30px;font-size:0.82rem;color:rgba(255,255,255,0.6);max-width:60ch;line-height:1.6;}
+.hero-micro b{color:#fff;font-weight:600;}
+.hero-strip{position:relative;z-index:2;border-top:none;background:#fff;}
+.hero-strip .hs-cell h4{color:var(--ink);}
+.hero-strip .hs-cell p{color:var(--muted);}
+.hero-strip .hs-cell .mark{background:var(--red);}
+.hero-strip .hs-cell{border-left-color:var(--line-l);}
+.hero-strip-in{max-width:1280px;margin:0 auto;display:grid;grid-template-columns:repeat(3,1fr);}
+.hs-cell{padding:30px clamp(20px,3vw,40px);border-left:1px solid var(--line-d);display:flex;gap:16px;align-items:flex-start;}
+.hs-cell:first-child{border-left:none;}
+.hs-cell .mark{width:9px;height:9px;background:var(--red);margin-top:7px;flex-shrink:0;}
+.hs-cell h4{font-family:'DM Sans',sans-serif;font-size:0.95rem;font-weight:600;color:#fff;margin-bottom:5px;letter-spacing:0.01em;}
+.hs-cell p{font-size:0.82rem;color:rgba(255,255,255,0.6);line-height:1.5;}
+
+.creds{background:#fff;border-bottom:1px solid var(--line-l);padding:26px clamp(20px,4vw,48px);}
+.creds-in{max-width:1280px;margin:0 auto;display:flex;align-items:center;gap:38px;flex-wrap:wrap;justify-content:center;}
+.creds-lbl{font-size:0.62rem;font-weight:700;letter-spacing:0.2em;text-transform:uppercase;color:var(--muted);}
+.creds-item{font-size:0.84rem;font-weight:500;color:var(--ink);letter-spacing:0.02em;}
+.creds-item b{font-family:'Bebas Neue',sans-serif;font-weight:400;font-size:1.05rem;letter-spacing:0.03em;color:var(--red);margin-right:5px;}
+
+.sec{padding:clamp(72px,9vw,120px) clamp(20px,4vw,48px);}
+.sec-in{max-width:1280px;margin:0 auto;}
+.dark{background:var(--ink);color:#fff;}
+.paper{background:var(--paper);}
+.sec-head{display:grid;grid-template-columns:0.9fr 1.1fr;gap:48px;align-items:end;margin-bottom:56px;}
+.sec-head .tag{margin-bottom:18px;}
+.sec-head h2{margin-bottom:0;}
+.sec-head .lead{max-width:48ch;}
+@media(max-width:860px){.sec-head{grid-template-columns:1fr;gap:20px;align-items:start;}}
+
+/* centered section head variant */
+.sec-head.centered{display:block;text-align:center;max-width:none;margin-bottom:56px;}
+.sec-head.centered .tag{justify-content:center;}
+.sec-head.centered h2{margin:0 auto 22px;max-width:20ch;}
+.sec-head.centered .lead{max-width:72ch;margin:0 auto;}
+
+.trust-top{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:start;margin-bottom:64px;}
+.trust-top .lead{font-size:1.05rem;}
+.trust-quote{font-family:'DM Sans';font-weight:500;font-size:clamp(1.2rem,1.9vw,1.6rem);line-height:1.45;color:#fff;border-left:3px solid var(--red);padding-left:26px;}
+.stat-row{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--line-d);}
+.stat{padding:38px 28px 8px 28px;border-left:1px solid var(--line-d);}
+.stat:first-child{border-left:none;padding-left:0;}
+.stat .num{font-family:'Bebas Neue',sans-serif;font-size:clamp(2.6rem,4.4vw,3.8rem);line-height:0.9;color:#fff;letter-spacing:0.01em;}
+.stat .num em{font-style:normal;color:var(--red);}
+.stat .cap{font-size:0.8rem;color:rgba(255,255,255,0.6);line-height:1.5;margin-top:14px;max-width:24ch;}
+.stat .lbl{font-size:0.6rem;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;color:#FF4040;margin-bottom:14px;}
+
+.acc{border-top:1px solid var(--line-l);}
+.dark .acc{border-top-color:var(--line-d);}
+.acc-item{border-bottom:1px solid var(--line-l);position:relative;}
+.dark .acc-item{border-bottom-color:var(--line-d);}
+.acc-item::before{content:'';position:absolute;left:0;top:0;bottom:0;width:3px;background:var(--red);transform:scaleY(0);transform-origin:top;transition:transform .4s cubic-bezier(.4,0,.2,1);}
+.acc-item.open::before{transform:scaleY(1);}
+.acc-trig{display:grid;grid-template-columns:64px 1fr 44px;align-items:center;gap:24px;width:100%;text-align:left;background:none;border:none;cursor:pointer;color:inherit;font-family:inherit;padding:28px 28px 28px 30px;transition:background .3s;}
+.acc-trig.no-num{grid-template-columns:1fr 44px;}
+.acc-item:hover .acc-trig{background:rgba(225,18,18,0.03);}
+.dark .acc-item:hover .acc-trig{background:rgba(255,255,255,0.025);}
+.acc-num{font-family:'Bebas Neue',sans-serif;font-size:1.15rem;letter-spacing:0.1em;color:var(--red);}
+.acc-ttl{font-family:'Bebas Neue',sans-serif;font-size:clamp(1.3rem,2.1vw,1.7rem);letter-spacing:0.02em;text-transform:uppercase;color:inherit;}
+.acc-tg{width:44px;height:44px;border:1px solid var(--line-l);border-radius:50%;display:flex;align-items:center;justify-content:center;position:relative;flex-shrink:0;transition:background .3s,border-color .3s,transform .4s cubic-bezier(.4,0,.2,1);}
+.dark .acc-tg{border-color:var(--line-d);}
+.acc-tg::before,.acc-tg::after{content:'';position:absolute;background:currentColor;transition:transform .35s;}
+.acc-tg::before{width:13px;height:1.5px;}
+.acc-tg::after{width:1.5px;height:13px;}
+.acc-item.open .acc-tg{background:var(--red);border-color:var(--red);color:#fff;transform:rotate(180deg);}
+.acc-item.open .acc-tg::after{transform:scaleY(0);}
+.acc-body{max-height:0;overflow:hidden;transition:max-height .55s cubic-bezier(.4,0,.2,1);}
+.acc-item.open .acc-body{max-height:320px;}
+.acc-body p{padding:0 90px 30px 118px;font-size:0.98rem;line-height:1.75;color:var(--muted);}
+.no-num + .acc-body p{padding-left:30px;}
+.dark .acc-body p{color:var(--muted-d);}
+@media(max-width:680px){.acc-body p{padding:0 24px 26px 24px;}}
+
+.method-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line-d);border:1px solid var(--line-d);}
+.m-card{background:var(--ink);display:flex;flex-direction:column;}
+.m-card-img{position:relative;aspect-ratio:4/3;overflow:hidden;background:#000;}
+.m-card-img img{width:100%;height:100%;object-fit:cover;transition:transform .8s ease;opacity:0.85;}
+.m-card:hover .m-card-img img{transform:scale(1.06);opacity:1;}
+.m-card-img .pin{position:absolute;top:16px;left:16px;width:9px;height:9px;background:var(--red);z-index:2;}
+.m-card-bd{padding:26px 24px 28px;display:flex;flex-direction:column;flex:1;}
+.m-letter{font-family:'Bebas Neue',sans-serif;font-size:1.7rem;letter-spacing:0.04em;color:#fff;line-height:1;}
+.m-tag{font-size:0.6rem;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;color:#FF4040;margin:8px 0 14px;}
+.m-card-bd h3{font-family:'Bebas Neue',sans-serif;font-weight:400;font-size:1.18rem;letter-spacing:0.02em;text-transform:uppercase;color:rgba(255,255,255,0.86);line-height:1.1;margin-bottom:14px;}
+.m-card-bd p{font-size:0.85rem;color:rgba(255,255,255,0.6);line-height:1.6;margin-bottom:18px;flex:1;}
+.m-walk{border-top:1px solid var(--line-d);padding-top:16px;font-size:0.84rem;color:rgba(255,255,255,0.82);line-height:1.5;}
+.m-walk b{display:block;font-size:0.56rem;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;color:#7a7f88;margin-bottom:7px;}
+.method-quote{margin-top:48px;text-align:center;padding:48px 24px;background:rgba(225,18,18,0.08);border-left:3px solid var(--red);}
+.method-quote p{font-family:'DM Sans';font-weight:500;font-size:clamp(1.15rem,1.9vw,1.6rem);color:#fff;max-width:60ch;margin:0 auto;line-height:1.45;}
+.method-cta{margin-top:40px;text-align:center;}
+
+.cmp{display:grid;grid-template-columns:1fr 1fr;border:1px solid var(--line-l);}
+.cmp-col{padding:44px clamp(24px,3vw,44px);}
+.cmp-col.them{background:var(--paper);}
+.cmp-col.us{background:var(--ink);color:#fff;}
+.cmp-col h4{font-size:0.64rem;font-weight:700;letter-spacing:0.2em;text-transform:uppercase;margin-bottom:26px;}
+.cmp-col.them h4{color:var(--muted);}
+.cmp-col.us h4{color:#FF4040;}
+.cmp-row{display:flex;gap:14px;padding:16px 0;border-top:1px solid var(--line-l);font-size:0.92rem;line-height:1.55;}
+.cmp-col.us .cmp-row{border-top-color:var(--line-d);color:rgba(255,255,255,0.85);}
+.cmp-col.them .cmp-row{color:var(--muted);}
+.cmp-row:first-of-type{border-top:none;}
+.cmp-row .s{flex-shrink:0;font-family:'Bebas Neue';font-size:1.1rem;line-height:1.2;}
+.cmp-col.them .s{color:#b9bdc4;}
+.cmp-col.us .s{color:var(--red);}
+@media(max-width:740px){.cmp{grid-template-columns:1fr;}}
+
+.split{display:grid;grid-template-columns:1fr 1fr;align-items:stretch;}
+.split-img{position:relative;min-height:440px;overflow:hidden;background:#000;}
+.split-img img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;}
+.split-img .ovl{position:absolute;inset:0;background:linear-gradient(120deg,transparent 55%,rgba(20,20,20,0.6) 100%);}
+.split-img .qt{position:absolute;left:28px;bottom:28px;right:28px;font-family:'Bebas Neue';font-size:1.4rem;letter-spacing:0.02em;color:#fff;line-height:1.05;z-index:2;}
+.split-tx{background:var(--ink);color:#fff;padding:clamp(44px,5vw,72px);display:flex;flex-direction:column;justify-content:center;}
+.split-tx .tag{margin-bottom:20px;}
+.split-tx h2{margin-bottom:26px;}
+.split-tx p{font-size:0.96rem;color:rgba(255,255,255,0.74);line-height:1.78;margin-bottom:18px;}
+.split-tx .pull{font-family:'DM Sans';font-weight:500;color:#fff;font-size:1.05rem;border-left:3px solid var(--red);padding-left:20px;margin:8px 0 22px;line-height:1.5;}
+@media(max-width:860px){.split{grid-template-columns:1fr;}.split-img{min-height:340px;}}
+
+.testi-grid{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--line-l);border:1px solid var(--line-l);}
+.testi{background:#fff;padding:clamp(30px,3vw,46px);display:flex;flex-direction:column;}
+.testi .stars{color:var(--red);font-size:0.9rem;letter-spacing:2px;margin-bottom:20px;}
+.testi .big{font-family:'Bebas Neue';font-size:clamp(1.3rem,1.8vw,1.6rem);letter-spacing:0.01em;line-height:1.1;color:var(--ink);margin-bottom:20px;text-transform:uppercase;}
+.testi p{font-size:0.9rem;color:var(--muted);line-height:1.7;margin-bottom:24px;flex:1;}
+.testi .by{display:flex;align-items:center;gap:14px;border-top:1px solid var(--line-l);padding-top:20px;}
+.testi .av{width:42px;height:42px;background:var(--ink);color:#fff;display:flex;align-items:center;justify-content:center;font-family:'Bebas Neue';font-size:1.1rem;flex-shrink:0;}
+.testi .nm{font-family:'Bebas Neue';font-size:1.15rem;letter-spacing:0.02em;color:var(--ink);line-height:1;}
+.testi .ro{font-size:0.66rem;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:var(--muted);margin-top:5px;}
+@media(max-width:740px){.testi-grid{grid-template-columns:1fr;}}
+
+/* image band — humanizing wide image with caption */
+.img-band{position:relative;margin-top:56px;overflow:hidden;border:1px solid var(--line-d);}
+.img-band img{width:100%;height:clamp(260px,38vw,480px);object-fit:cover;display:block;transition:transform 1.2s ease;}
+.img-band:hover img{transform:scale(1.04);}
+.img-band::after{content:'';position:absolute;inset:0;background:linear-gradient(0deg,rgba(20,20,20,0.7) 0%,transparent 45%);pointer-events:none;}
+.img-band-cap{position:absolute;left:clamp(20px,3vw,36px);bottom:24px;z-index:2;color:#fff;font-family:'Bebas Neue',sans-serif;font-size:clamp(1.1rem,1.8vw,1.5rem);letter-spacing:0.02em;border-left:3px solid var(--red);padding-left:16px;max-width:40ch;line-height:1.05;text-transform:uppercase;}
+.paper .img-band,.sec:not(.dark) .img-band{border-color:var(--line-l);}
+
+/* events / speaking gallery */
+.events-grid{display:grid;grid-template-columns:1.4fr 1fr;gap:1px;background:var(--line-l);border:1px solid var(--line-l);}
+.ev{position:relative;overflow:hidden;min-height:300px;background:#000;}
+.ev img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform 1s ease;}
+.ev:hover img{transform:scale(1.05);}
+.ev::after{content:'';position:absolute;inset:0;background:linear-gradient(0deg,rgba(20,20,20,0.85) 0%,rgba(20,20,20,0.1) 55%);}
+.ev-tx{position:absolute;left:0;right:0;bottom:0;z-index:2;padding:clamp(22px,2.6vw,34px);}
+.ev-tag{display:inline-block;font-size:0.58rem;font-weight:700;letter-spacing:0.2em;text-transform:uppercase;color:#fff;background:var(--red);padding:6px 12px;margin-bottom:14px;}
+.ev h3{font-family:'Bebas Neue',sans-serif;font-weight:400;font-size:clamp(1.5rem,2.4vw,2.1rem);letter-spacing:0.02em;text-transform:uppercase;color:#fff;line-height:1;margin-bottom:10px;}
+.ev p{font-size:0.9rem;color:#fff;line-height:1.55;max-width:46ch;}
+.ev-stat{display:flex;gap:28px;margin-top:18px;}
+.ev-stat b{font-family:'Bebas Neue',sans-serif;font-weight:400;font-size:1.7rem;color:#fff;letter-spacing:0.02em;display:block;line-height:1;}
+.ev-stat span{font-size:0.62rem;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;color:rgba(255,255,255,0.6);margin-top:6px;display:block;}
+@media(max-width:740px){.events-grid{grid-template-columns:1fr;}.ev{min-height:280px;}}
+
+.offer{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center;}
+.offer-card{background:var(--ink);color:#fff;padding:clamp(36px,4vw,56px);}
+.offer-card .ribbon{display:inline-block;background:var(--red);color:#fff;font-size:0.6rem;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;padding:7px 14px;margin-bottom:24px;}
+.offer-card h3{font-family:'Bebas Neue';font-weight:400;font-size:clamp(1.8rem,2.6vw,2.4rem);letter-spacing:0.02em;text-transform:uppercase;margin-bottom:14px;line-height:1;}
+.offer-card>p{color:rgba(255,255,255,0.72);font-size:0.96rem;line-height:1.7;margin-bottom:28px;}
+.offer-feat{border-top:1px solid var(--line-d);padding-top:18px;margin-bottom:18px;}
+.offer-feat b{display:block;font-size:0.6rem;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;color:#7a7f88;margin-bottom:6px;}
+.offer-feat span{font-size:0.92rem;color:rgba(255,255,255,0.86);line-height:1.5;}
+.offer-card .fine{font-size:0.78rem;color:rgba(255,255,255,0.5);margin:8px 0 26px;line-height:1.55;}
+.offer-text .tag{margin-bottom:20px;}
+.offer-text h2{margin-bottom:22px;}
+.offer-text p{color:var(--muted);font-size:0.98rem;line-height:1.78;margin-bottom:16px;}
+@media(max-width:860px){.offer{grid-template-columns:1fr;gap:32px;}}
+
+.fit{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--line-l);border:1px solid var(--line-l);margin-bottom:64px;}
+.fit-col{background:#fff;padding:clamp(30px,3.5vw,48px);}
+.fit-col.no{background:var(--paper);}
+.fit-col h4{font-family:'Bebas Neue';font-size:1.4rem;letter-spacing:0.02em;margin-bottom:8px;text-transform:uppercase;}
+.fit-col.yes h4{color:var(--red);}
+.fit-col.no h4{color:var(--ink);}
+.fit-col .sub{font-size:0.66rem;font-weight:700;letter-spacing:0.16em;text-transform:uppercase;color:var(--muted);margin-bottom:24px;}
+.fit-li{display:flex;gap:14px;padding:14px 0;border-top:1px solid var(--line-l);font-size:0.94rem;line-height:1.55;color:var(--ink);}
+.fit-li .ic{flex-shrink:0;width:20px;height:20px;display:flex;align-items:center;justify-content:center;font-size:0.8rem;font-weight:700;margin-top:1px;}
+.fit-col.yes .ic{color:var(--red);}
+.fit-col.no .ic{color:#b0b4bb;}
+.fit-li:first-of-type{border-top:none;}
+@media(max-width:740px){.fit{grid-template-columns:1fr;}}
+
+.audit{position:relative;overflow:hidden;background:var(--ink);color:#fff;}
+.audit-grid{display:grid;grid-template-columns:1.1fr 0.9fr;max-width:1280px;margin:0 auto;}
+.audit-l{padding:clamp(56px,7vw,96px) clamp(24px,4vw,64px);}
+.audit-l .tag{margin-bottom:22px;}
+.audit-l h2{margin-bottom:22px;}
+.audit-l>p{color:rgba(255,255,255,0.74);font-size:0.98rem;line-height:1.7;margin-bottom:26px;max-width:50ch;}
+.audit-list{list-style:none;margin-bottom:30px;}
+.audit-list li{display:flex;gap:14px;padding:10px 0;font-size:0.94rem;color:rgba(255,255,255,0.86);line-height:1.5;}
+.audit-list li::before{content:'';width:14px;height:2px;background:var(--red);flex-shrink:0;margin-top:11px;}
+.audit-r{position:relative;min-height:100%;overflow:hidden;border-left:1px solid var(--line-d);}
+.audit-r img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0.5;}
+.audit-r::after{content:'';position:absolute;inset:0;background:linear-gradient(90deg,var(--ink) 0%,transparent 40%);}
+@media(max-width:860px){.audit-grid{grid-template-columns:1fr;}.audit-r{min-height:240px;}}
+
+.apply{background:var(--paper);}
+.apply-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(40px,5vw,80px);align-items:start;}
+.apply-l .tag{margin-bottom:22px;}
+.apply-l h2{margin-bottom:22px;}
+.apply-l p{color:var(--muted);font-size:0.98rem;line-height:1.78;margin-bottom:28px;max-width:46ch;}
+.apply-mini{border-top:1px solid var(--line-l);padding-top:22px;}
+.apply-mini .row{display:flex;gap:14px;padding:9px 0;font-size:0.92rem;color:var(--ink);line-height:1.5;}
+.apply-mini .row .s{color:var(--red);font-family:'Bebas Neue';font-size:1.05rem;flex-shrink:0;}
+.form{background:#fff;border:1px solid var(--line-l);padding:clamp(28px,3vw,44px);}
+.form .fl{font-size:0.62rem;font-weight:700;letter-spacing:0.16em;text-transform:uppercase;color:var(--muted);margin:18px 0 8px;display:block;}
+.form .fl:first-child{margin-top:0;}
+.form input,.form textarea{width:100%;border:1px solid var(--line-l);background:var(--paper);padding:13px 15px;font-family:'DM Sans';font-size:0.95rem;color:var(--ink);transition:border-color .2s,background .2s;}
+.form input:focus,.form textarea:focus{outline:none;border-color:var(--red);background:#fff;}
+.form textarea{resize:vertical;min-height:96px;}
+.form .btn{width:100%;justify-content:center;margin-top:24px;}
+.form .fine{font-size:0.74rem;color:var(--muted);margin-top:14px;text-align:center;line-height:1.5;}
+@media(max-width:860px){.apply-grid{grid-template-columns:1fr;gap:36px;}}
+
+.close{background:var(--ink);color:#fff;text-align:center;}
+.close-in{max-width:920px;margin:0 auto;}
+.close .tag{margin-bottom:24px;justify-content:center;}
+.close h2{margin-bottom:18px;}
+.close>.sub{color:rgba(255,255,255,0.72);font-size:1.05rem;margin-bottom:34px;}
+.close-list{display:flex;flex-direction:column;gap:10px;max-width:520px;margin:0 auto 38px;text-align:left;}
+.close-list li{display:flex;gap:14px;font-size:0.95rem;color:rgba(255,255,255,0.82);line-height:1.5;}
+.close-list li::before{content:'';width:14px;height:2px;background:var(--red);flex-shrink:0;margin-top:11px;}
+.close-btns{display:flex;gap:16px;justify-content:center;flex-wrap:wrap;align-items:center;}
+.close-fine{margin-top:26px;font-size:0.78rem;color:rgba(255,255,255,0.5);letter-spacing:0.08em;text-transform:uppercase;}
+
+footer{background:#0C0C0C;color:rgba(255,255,255,0.6);padding:72px clamp(20px,4vw,48px) 0;}
+.ft-in{max-width:1280px;margin:0 auto;display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr;gap:40px;padding-bottom:56px;border-bottom:1px solid var(--line-d);}
+.ft-brand .logo .mk{background:var(--red);}
+.ft-brand .logo .tx b{color:#fff;}
+.ft-brand p{margin-top:20px;font-size:0.9rem;line-height:1.7;max-width:38ch;color:rgba(255,255,255,0.55);}
+.ft-brand a.mail{display:inline-block;margin-top:18px;color:#fff;font-size:0.92rem;border-bottom:1px solid rgba(225,18,18,0.6);padding-bottom:2px;}
+.ft-col h5{font-size:0.62rem;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;color:#fff;margin-bottom:18px;}
+.ft-col a{display:block;font-size:0.86rem;color:rgba(255,255,255,0.55);padding:6px 0;transition:color .2s;}
+.ft-col a:hover{color:#fff;}
+.ft-bot{max-width:1280px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:14px;padding:24px 0;font-size:0.78rem;color:rgba(255,255,255,0.4);}
+.ft-bot .links{display:flex;gap:22px;}
+.ft-bot a:hover{color:#fff;}
+@media(max-width:860px){.ft-in{grid-template-columns:1fr 1fr;}}
+@media(max-width:560px){.ft-in{grid-template-columns:1fr;}}
+
+.pop-ov{position:fixed;inset:0;z-index:300;background:rgba(20,20,20,0.78);backdrop-filter:blur(8px);display:none;align-items:center;justify-content:center;padding:20px;}
+.pop-ov.open{display:flex;}
+.pop{background:#fff;max-width:520px;width:100%;animation:pu .35s ease;max-height:92vh;overflow:auto;}
+@keyframes pu{from{transform:translateY(16px);opacity:0;}to{transform:translateY(0);opacity:1;}}
+.pop-head{position:relative;background:var(--ink);color:#fff;padding:40px 44px 30px;overflow:hidden;}
+.pop-head .bg{position:absolute;inset:0;opacity:0.3;}
+.pop-head .bg img{width:100%;height:100%;object-fit:cover;}
+.pop-head .ct{position:relative;z-index:2;}
+.pop-x{position:absolute;top:14px;right:16px;z-index:3;background:none;border:none;color:rgba(255,255,255,0.55);font-size:1.2rem;cursor:pointer;line-height:1;}
+.pop-x:hover{color:#fff;}
+.pop-head .tag{margin-bottom:14px;}
+.pop-head h3{font-family:'Bebas Neue';font-weight:400;font-size:1.9rem;letter-spacing:0.02em;text-transform:uppercase;line-height:1;}
+.pop-bd{padding:32px 44px 40px;}
+.pop-bd>p{font-size:0.94rem;color:var(--muted);line-height:1.7;margin-bottom:18px;}
+.pop-list{list-style:none;margin-bottom:22px;}
+.pop-list li{display:flex;gap:12px;font-size:0.92rem;color:var(--ink);padding:7px 0;line-height:1.5;}
+.pop-list li::before{content:'';width:13px;height:2px;background:var(--red);flex-shrink:0;margin-top:11px;}
+.pop-bd .fl{font-size:0.62rem;font-weight:700;letter-spacing:0.16em;text-transform:uppercase;color:var(--muted);margin:14px 0 7px;display:block;}
+.pop-bd input{width:100%;border:1px solid var(--line-l);background:var(--paper);padding:12px 14px;font-family:'DM Sans';font-size:0.95rem;}
+.pop-bd input:focus{outline:none;border-color:var(--red);background:#fff;}
+.pop-bd .btn{width:100%;justify-content:center;margin-top:20px;}
+.pop-bd .fine{font-size:0.74rem;color:var(--muted);text-align:center;margin-top:12px;}
+
+/* stat-side: image left, stats panel right */
+.stat-side{display:grid;grid-template-columns:1fr 380px;margin-top:48px;border:1px solid var(--line-d);overflow:hidden;}
+.stat-side-img{position:relative;overflow:hidden;min-height:560px;}
+.stat-side-img img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center top;transition:transform 1.2s ease;}
+.stat-side:hover .stat-side-img img{transform:scale(1.03);}
+.stat-side-panel{background:var(--ink-2);display:flex;flex-direction:column;justify-content:space-between;padding:clamp(28px,3vw,44px);border-left:1px solid var(--line-d);}
+.stat-side-cap{font-family:'Bebas Neue',sans-serif;font-size:clamp(0.95rem,1.3vw,1.15rem);letter-spacing:0.02em;text-transform:uppercase;color:rgba(255,255,255,0.65);border-left:3px solid var(--red);padding-left:14px;line-height:1.1;margin-bottom:36px;}
+.stat-side-grid{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--line-d);border-top:1px solid var(--line-d);}
+.stat-side-item{padding:24px 18px 20px;background:var(--ink-2);}
+.stat-side-item:nth-child(odd){border-right:none;}
+.sbi-lbl{font-size:0.58rem;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;color:#FF4040;margin-bottom:10px;}
+.sbi-num{font-family:'Bebas Neue',sans-serif;font-size:clamp(2.2rem,3.2vw,3rem);line-height:0.9;color:#fff;letter-spacing:0.01em;}
+.sbi-num em{font-style:normal;color:var(--red);}
+.sbi-cap{font-size:0.76rem;color:rgba(255,255,255,0.52);line-height:1.5;margin-top:10px;}
+@media(max-width:860px){.stat-side{grid-template-columns:1fr;}.stat-side-img{min-height:360px;}.stat-side-panel{border-left:none;border-top:1px solid var(--line-d);}}
+
+.faq-split{display:grid;grid-template-columns:1fr 1.4fr;gap:clamp(40px,5vw,80px);align-items:start;margin-top:56px;}
+.faq-split-l .tag{margin-bottom:18px;}
+.faq-split-l h2{line-height:1;}
+@media(max-width:740px){.faq-split{grid-template-columns:1fr;gap:32px;}}
+
+.acc-2col{display:grid;grid-template-columns:1fr 1fr;gap:0 1px;background:var(--line-l);}
+.acc-2col .acc{background:#fff;}
+.acc-2col .acc:first-child{border-right:none;}
+@media(max-width:740px){.acc-2col{grid-template-columns:1fr;gap:0;}}
+
+.reveal{opacity:0;transform:translateY(24px);transition:opacity .7s ease,transform .7s ease;}
+.reveal.in{opacity:1;transform:none;}
+@media(prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none;}.m-card-img img,.acc-body,.btn .ar{transition:none;}}
+
+/* hamburger always visible, links hidden by default (full-screen overlay when open) */
+.nav-links{display:none;position:fixed;top:0;left:0;right:0;bottom:0;flex-direction:column;align-items:center;justify-content:center;gap:6px;background:var(--ink);z-index:250;padding:80px 24px 24px;}
+.nav-links.open{display:flex;}
+.nav-links a{font-family:'Bebas Neue',sans-serif;font-size:1.7rem;letter-spacing:0.04em;color:#fff;padding:14px 20px;text-transform:uppercase;}
+.nav-links a:hover{color:var(--red);}
+.burger{display:flex;flex-direction:column;gap:5px;background:none;border:none;cursor:pointer;padding:6px;position:relative;z-index:260;}
+.burger span{width:26px;height:2px;background:#fff;display:block;transition:transform .3s ease,opacity .3s ease;}
+.burger.open span:nth-child(1){transform:translateY(7px) rotate(45deg);}
+.burger.open span:nth-child(2){opacity:0;}
+.burger.open span:nth-child(3){transform:translateY(-7px) rotate(-45deg);}
+
+@media(max-width:1040px){
+  .method-grid{grid-template-columns:1fr 1fr;}
+  .trust-top{grid-template-columns:1fr;gap:32px;}
+  .stat-row{grid-template-columns:1fr 1fr;}
+  .stat:nth-child(3){border-left:none;padding-left:0;}
+}
+@media(max-width:860px){
+  nav{height:64px;padding:0 20px;}
+  .hero{min-height:100vh;}
+  .hero-inner{padding:120px 22px 60px;}
+  .hero h1 .display{font-size:clamp(2.4rem,10vw,3.6rem);}
+  .hero-sub{font-size:1rem;max-width:none;}
+  .hero-btns{gap:12px;}
+  .btn{padding:14px 22px;font-size:0.68rem;}
+  .sec{padding:64px 20px;}
+  .sec-head{grid-template-columns:1fr;gap:20px;}
+  .stat-side{grid-template-columns:1fr;}
+  .stat-side-img{min-height:320px;}
+  .stat-side-panel{border-left:none;border-top:1px solid var(--line-d);}
+  .method-grid{grid-template-columns:1fr;}
+  .cmp{grid-template-columns:1fr;}
+  .split{grid-template-columns:1fr;}
+  .split-img{min-height:280px;}
+  .testi-grid{grid-template-columns:1fr;}
+  .events-grid{grid-template-columns:1fr;}
+  .ev{min-height:260px;}
+  .offer{grid-template-columns:1fr;gap:28px;}
+  .fit{grid-template-columns:1fr;}
+  .audit-grid{grid-template-columns:1fr;}
+  .audit-r{min-height:220px;}
+  .apply-grid{grid-template-columns:1fr;gap:32px;}
+  .faq-split{grid-template-columns:1fr;gap:24px;}
+  .acc-2col{grid-template-columns:1fr;}
+  .creds-in{gap:20px;justify-content:flex-start;}
+  .hero-strip-in{grid-template-columns:1fr;}
+  .hs-cell{border-left:none;border-top:1px solid var(--line-l);padding:20px 22px;}
+  .hs-cell:first-child{border-top:none;}
+  .close h2.display,.close h2[style]{white-space:normal !important;}
+  .close-in h2{font-size:clamp(2rem,9vw,3rem) !important;}
+  footer{padding:52px 20px 0;}
+  .ft-in{grid-template-columns:1fr;gap:32px;padding-bottom:36px;}
+  .ft-bot{flex-direction:column;align-items:flex-start;text-align:left;padding:20px 0;}
+}
+@media(max-width:560px){
+  html{font-size:100%;}
+  .hero-inner{padding:110px 20px 48px;}
+  .hero-tag,.tag{font-size:0.6rem;letter-spacing:0.18em;}
+  .stat-side-grid{grid-template-columns:1fr;}
+  .stat-side-item:nth-child(odd){border-right:none;}
+  .acc-trig{grid-template-columns:36px 1fr 36px;gap:12px;padding:20px 16px;}
+  .acc-num{font-size:1rem;}
+  .acc-ttl{font-size:1.05rem;}
+  .acc-body p{padding:0 16px 22px 16px !important;}
+  .no-num + .acc-body p{padding-left:16px !important;}
+  .creds-in{flex-direction:column;align-items:flex-start;gap:12px;}
+  .stat-band-grid{grid-template-columns:1fr;}
+  .form,.pop-bd{padding:22px 20px;}
+  .pop-head{padding:32px 24px 24px;}
+  .m-card-bd{padding:22px 20px 24px;}
+  .close-btns{flex-direction:column;align-items:stretch;}
+  .close-btns .btn{justify-content:center;}
+}
+
+/* ============================================================
+   MOBILE-VIEW REFINEMENTS (added) — only affect small screens,
+   desktop layout is untouched
+   ============================================================ */
+@media(max-width:860px){
+  /* iOS Safari zooms into any focused field whose font is < 16px.
+     Bump form controls to 16px on touch/small screens to stop that. */
+  .form input,.form textarea,.pop-bd input{font-size:16px;}
+
+  /* On desktop the hero image is darkened left-to-right (text sits left).
+     Once the copy spans the full width on phones, switch to a top-to-bottom
+     scrim so every line of hero text stays legible over the photo. */
+  .hero-bg::after{background:linear-gradient(180deg,rgba(20,20,20,0.60) 0%,rgba(20,20,20,0.55) 45%,rgba(20,20,20,0.90) 100%);}
+  .hero-sub,.hero-micro{max-width:none;}
+
+  /* Never let media force the page wider than the viewport */
+  img,video,iframe{max-width:100%;}
+}
+
+@media(max-width:560px){
+  /* Long uppercase eyebrow tags fit on one line instead of wrapping oddly */
+  .tag{letter-spacing:0.14em;gap:6px;}
+
+  /* Reclaim horizontal room inside the big dark panels on narrow phones */
+  .split-tx{padding:40px 22px;}
+  .offer-card{padding:34px 22px;}
+  .audit-l{padding:56px 22px;}
+
+  /* Keep long words / emails from overflowing their container */
+  .ft-brand a.mail,.creds-item,.testi .ro,.testi .nm{overflow-wrap:anywhere;}
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="#top" class="logo">
+    <img src="https://cdn.katalyst-crm.com/t1/Group%201.png" alt="Powerhouse 360" style="height:30px;width:auto;display:block;">
+  </a>
+  <ul class="nav-links">
+    <li><a href="#problem">The Problem</a></li>
+    <li><a href="#method">The Method</a></li>
+    <li><a href="#events">Events</a></li>
+    <li><a href="#work">The Work</a></li>
+    <li><a href="#story">About</a></li>
+    <li><a href="#fit">Is It a Fit?</a></li>
+  </ul>
+  <div class="nav-right">
+    <button class="burger" aria-label="Menu" onclick="toggleMenu()"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="hero-bg"><img src="https://cdn.katalyst-crm.com/t1/jkj.png" alt="Powerhouse360 hero background"></div>
+  <div class="hero-inner">
+    <span class="tag on-dark hero-tag">Private Advising — By Application</span>
+    <h1><span class="display">Scale with <span class="red">intent.</span><br>Not just effort.</span></h1>
+    <p class="hero-sub" style="margin-bottom:34px;">What if we amplified everything you&#39;re already doing right? Most people scale by working harder. Scaling on purpose is easier.</p>
+    <div class="hero-btns">
+      <a href="#apply" class="btn btn-red" onclick="openPopup(event)">Start your application <span class="ar">→</span></a>
+      <a href="#method" class="btn btn-ghost lt">Read the method first</a>
+    </div>
+    <p class="hero-micro"><b>Yasmine Mardelli</b> — partner at Royal LePage du Quartier, a billion-dollar-a-year real estate company, eight consecutive years of national awards.</p>
+  </div>
+  <div class="hero-strip">
+    <div class="hero-strip-in">
+      <div class="hs-cell"><span class="mark"></span><div><h4>$1B / year managed</h4><p>Sales volume sustained for 8+ consecutive years.</p></div></div>
+      <div class="hs-cell"><span class="mark"></span><div><h4>10 clients — by design</h4><p>A deliberate cap. Depth over volume, always.</p></div></div>
+      <div class="hs-cell"><span class="mark"></span><div><h4>A real conversation</h4><p>A short application, then a direct call. No pitch.</p></div></div>
+    </div>
+  </div>
+</header>
+
+
+
+<section class="sec dark" id="numbers">
+  <div class="sec-in">
+    <span class="tag on-dark reveal">The Numbers</span>
+    <div class="trust-top reveal" style="margin-top:18px;">
+      <div>
+        <h2 class="display d-lg" style="margin-bottom:20px;">Receipts, not adjectives.</h2>
+        <p class="lead">She is not a coach who studies success. She runs it. Yasmine has spent the last decade building Royal LePage du Quartier into one of Quebec&#39;s most recognized real estate organizations — 185 brokers across four locations, sustained at scale.</p>
+      </div>
+      <p class="trust-quote">&ldquo;True success was never just the business. It&#39;s evolving into the person capable of a life, an impact, and a level of fulfillment you once didn&#39;t think was yours to have.&rdquo;</p>
+    </div>
+    <div class="stat-side reveal">
+      <div class="stat-side-img">
+        <img src="https://cdn.katalyst-crm.com/t1/IMGL1748%201.png" alt="Yasmine Mardelli working the room — leadership in practice">
+      </div>
+      <div class="stat-side-panel">
+        <div class="stat-side-cap">Working the room she built — leadership in practice, not theory.</div>
+        <div class="stat-side-grid">
+          <div class="stat-side-item">
+            <div class="sbi-lbl">Sustained scale</div>
+            <div class="sbi-num">$<em>1</em>B</div>
+            <div class="sbi-cap">Annual sales volume, eight consecutive years.</div>
+          </div>
+          <div class="stat-side-item">
+            <div class="sbi-lbl">Built from 22</div>
+            <div class="sbi-num"><em>185</em></div>
+            <div class="sbi-cap">Brokers across four locations.</div>
+          </div>
+          <div class="stat-side-item">
+            <div class="sbi-lbl">Recognition</div>
+            <div class="sbi-num"><em>8</em>+</div>
+            <div class="sbi-cap">National awards, won consecutively.</div>
+          </div>
+          <div class="stat-side-item">
+            <div class="sbi-lbl">By design</div>
+            <div class="sbi-num"><em>10</em></div>
+            <div class="sbi-cap">Advisory seats. Depth over volume.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="problem">
+  <div class="sec-in">
+    <div class="sec-head centered reveal" style="max-width:900px;margin-left:auto;margin-right:auto;">
+      <span class="tag">The Real Problem</span>
+      <h2 class="display d-lg" style="max-width:none;">You&#39;re busy chasing your tail.<br>You wanted to <span class="red">lead.</span></h2>
+      <p class="lead" style="max-width:72ch;font-size:1.08rem;">Success got you here. It won&#39;t get you there. Most leaders pour energy into the secondary things and starve the primary ones — no one ever showed them the difference. You built something real, and somewhere along the way it started running you.</p>
+    </div>
+    <div class="acc-2col reveal">
+      <div class="acc">
+        <div class="acc-item open">
+          <button class="acc-trig" onclick="toggleAcc(this)"><span class="acc-num">01</span><span class="acc-ttl">Stuck on repeat</span><span class="acc-tg"></span></button>
+          <div class="acc-body"><p>Decisions loop in your head for weeks and still feel unresolved. The same questions, the same Sunday-night anxiety, the same trade-offs you can&#39;t quite settle.</p></div>
+        </div>
+        <div class="acc-item">
+          <button class="acc-trig" onclick="toggleAcc(this)"><span class="acc-num">02</span><span class="acc-ttl">Reactive, not strategic</span><span class="acc-tg"></span></button>
+          <div class="acc-body"><p>You&#39;re reacting all day instead of thinking three moves ahead. The calendar runs the business. The business runs you. Strategy keeps getting pushed to &ldquo;next week.&rdquo;</p></div>
+        </div>
+        <div class="acc-item">
+          <button class="acc-trig" onclick="toggleAcc(this)"><span class="acc-num">03</span><span class="acc-ttl">Everything competes</span><span class="acc-tg"></span></button>
+          <div class="acc-body"><p>The business, the family, the health, the relationship — one is always borrowing from another. You win at work while quietly losing somewhere else, and it doesn&#39;t feel like winning.</p></div>
+        </div>
+      </div>
+      <div class="acc">
+        <div class="acc-item">
+          <button class="acc-trig" onclick="toggleAcc(this)"><span class="acc-num">04</span><span class="acc-ttl">The invisible ceiling</span><span class="acc-tg"></span></button>
+          <div class="acc-body"><p>You sense a ceiling and can&#39;t name what&#39;s holding you to it. Everything you try just bounces you back to where you&#39;ve been. The lever to break through isn&#39;t where you keep looking for it.</p></div>
+        </div>
+        <div class="acc-item">
+          <button class="acc-trig" onclick="toggleAcc(this)"><span class="acc-num">05</span><span class="acc-ttl">Effort without return</span><span class="acc-tg"></span></button>
+          <div class="acc-body"><p>The harder you push, the less it compounds. You used to feel the leverage; now you mostly feel the effort. Something about the system itself isn&#39;t paying you back the way it used to.</p></div>
+        </div>
+      </div>
+    </div>
+    <div class="reveal" style="margin-top:48px;text-align:center;">
+      <p class="lead" style="max-width:64ch;margin:0 auto 28px;">That&#39;s the shift: from running after the business to leading it — and yourself — on purpose. Calmer. Clearer. Compounding.</p>
+      <a href="#apply" class="btn btn-red" onclick="openPopup(event)">Apply for a private call <span class="ar">→</span></a>
+    </div>
+  </div>
+</section>
+
+<section class="sec dark" id="method">
+  <div class="sec-in">
+    <div class="sec-head centered reveal">
+      <span class="tag on-dark">The Method</span>
+      <h2 class="display d-lg" style="max-width:none;">A philosophy you can run. <span class="red">Not just feel.</span></h2>
+      <p class="lead">Inspiration is cheap. A system compounds. Yasmine has decoded what she does into frameworks you can actually run — taking what most high performers carry half-formed in their heads and turning it into something repeatable, so the change holds.</p>
+    </div>
+    <div class="method-grid reveal">
+      <div class="m-card">
+        <div class="m-card-img"><span class="pin"></span><img src="https://d8j0ntlcm91z4.cloudfront.net/user_35NBuSfIPglHIOMZxxqoxDRFcyj/hf_20260630_193928_19ace6d8-e314-460c-8a23-0d1cfe7df5ba.png" alt="One-on-one business coaching session"></div>
+        <div class="m-card-bd">
+          <span class="m-letter">C.A.T.C.H.</span>
+          <span class="m-tag">The Cornerstone</span>
+          <h3>Catch yourself doing it right</h3>
+          <p>We train your brain to notice the moments you act at your best — then claim them as identity, not luck. You&#39;ll start banking your wins and replicating the pattern on purpose.</p>
+          <div class="m-walk"><b>You walk away with</b>Confidence sourced from evidence — and a repeatable pattern of your own best behavior.</div>
+        </div>
+      </div>
+      <div class="m-card">
+        <div class="m-card-img"><span class="pin"></span><img src="https://d8j0ntlcm91z4.cloudfront.net/user_35NBuSfIPglHIOMZxxqoxDRFcyj/hf_20260630_193934_61ddeb16-ac57-4175-8af9-d45475a5ce38.png" alt="Team strategy workshop aligning on a framework"></div>
+        <div class="m-card-bd">
+          <span class="m-letter">C.L.E.A.R.</span>
+          <span class="m-tag">Force Multiplier</span>
+          <h3>Clarity as a force multiplier</h3>
+          <p>We clarify what you actually want, find where decisions are stuck, eliminate the friction draining you, align everything to the vision, and reinforce it with systems. You cannot scale confusion.</p>
+          <div class="m-walk"><b>You walk away with</b>Laser priorities, fewer open loops, and a business pointed in one direction.</div>
+        </div>
+      </div>
+      <div class="m-card">
+        <div class="m-card-img"><span class="pin"></span><img src="https://d8j0ntlcm91z4.cloudfront.net/user_35NBuSfIPglHIOMZxxqoxDRFcyj/hf_20260630_193939_bbfcf490-41f3-4ef2-9808-50bd85fcde11.png" alt="Focused collaboration reviewing a plan"></div>
+        <div class="m-card-bd">
+          <span class="m-letter">Reset</span>
+          <span class="m-tag">Decision Reset</span>
+          <h3>Power under pressure</h3>
+          <p>We interrupt the reactivity and decision fatigue that quietly runs high performers into the ground. Pause, then power, then precision. You&#39;ll make heavy calls from a regulated, deliberate place.</p>
+          <div class="m-walk"><b>You walk away with</b>Faster, cleaner, higher-quality decisions when the stakes are highest.</div>
+        </div>
+      </div>
+      <div class="m-card">
+        <div class="m-card-img"><span class="pin"></span><img src="https://d8j0ntlcm91z4.cloudfront.net/user_35NBuSfIPglHIOMZxxqoxDRFcyj/hf_20260630_193947_476535c9-bdcb-4808-ad4a-e2ba765ba012.png" alt="Business roundtable discussion"></div>
+        <div class="m-card-bd">
+          <span class="m-letter">Whole</span>
+          <span class="m-tag">Whole Life Power</span>
+          <h3>Nothing left to leak</h3>
+          <p>Every category of your life either compounds your power or taxes it. We map them all — physical, mental, identity, relational, financial, future — so you grow congruently instead of self-sabotaging elsewhere.</p>
+          <div class="m-walk"><b>You walk away with</b>A life that feeds your performance instead of fighting it.</div>
+        </div>
+      </div>
+    </div>
+    <div class="method-cta reveal"><a href="#apply" class="btn btn-red" onclick="openPopup(event)">Run this with Yasmine <span class="ar">→</span></a></div>
+  </div>
+</section>
+
+<section class="sec" id="difference">
+  <div class="sec-in">
+    <div class="sec-head centered reveal">
+      <span class="tag">The Difference</span>
+      <h2 class="display d-lg" style="max-width:none;">Everyone hunts your leaks. She finds your <span class="red">leverage.</span></h2>
+      <p class="lead">Stop fixing what&#39;s wrong. Start scaling what&#39;s right. Most coaching opens by cataloguing everything you&#39;re doing wrong. This starts somewhere else entirely.</p>
+    </div>
+    <div class="cmp reveal">
+      <div class="cmp-col them">
+        <h4>What usually happens</h4>
+        <div class="cmp-row"><span class="s">—</span><span>Coaching that opens by cataloguing everything you&#39;re doing wrong.</span></div>
+        <div class="cmp-row"><span class="s">—</span><span>Motivation that fades by Monday.</span></div>
+        <div class="cmp-row"><span class="s">—</span><span>Generic &ldquo;winning mindset&rdquo; content, free all over the internet.</span></div>
+        <div class="cmp-row"><span class="s">—</span><span>Advice that lives only in business, ignoring the life around it.</span></div>
+        <div class="cmp-row"><span class="s">—</span><span>AI bolted on as the headline, obsolete in a month.</span></div>
+        <div class="cmp-row"><span class="s">—</span><span>A coach who studied success from the outside.</span></div>
+      </div>
+      <div class="cmp-col us">
+        <h4>What happens here</h4>
+        <div class="cmp-row"><span class="s">→</span><span>We start by naming what you&#39;re already doing right — then build on it.</span></div>
+        <div class="cmp-row"><span class="s">→</span><span>Frameworks you can run again and again, long after our call ends.</span></div>
+        <div class="cmp-row"><span class="s">→</span><span>A decade of building a billion-dollar company, decoded into a system.</span></div>
+        <div class="cmp-row"><span class="s">→</span><span>Every category of your life mapped — they all feed or tax your power.</span></div>
+        <div class="cmp-row"><span class="s">→</span><span>Systems and AI used quietly, only to free you from repetitive decisions.</span></div>
+        <div class="cmp-row"><span class="s">→</span><span>A founder who runs $1B in sales and teaches from the inside.</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="story">
+  <div class="split">
+    <div class="split-img reveal">
+      <img src="https://cdn.katalyst-crm.com/t1/IMGL1652.jpg" alt="Yasmine Mardelli, real estate executive and leadership advisor">
+      <div class="ovl"></div>
+      <span class="qt">&ldquo;From nothing to a billion —<br>by choice, not luck.&rdquo;</span>
+    </div>
+    <div class="split-tx reveal">
+      <span class="tag on-dark">The Story</span>
+      <h2 class="display d-md">She built her life on purpose. <span class="red">She can help you build yours.</span></h2>
+      <p>The concept that rewired Yasmine&#39;s brain through repetition was simple: if you really believed you were that person, how would you think, how would you act, how would you carry yourself? So she started doing exactly that — and acted her way into the person she wanted to become.</p>
+      <p>Then came the harder chapter. She had the business, the home, the family — and was so lost in the hustle of building it that she felt like a stranger in her own success. Learning to accept what she&#39;d built without sabotaging it took more from her than building it did.</p>
+      <p class="pull">&ldquo;It&#39;s just a grain of sand. I&#39;ve got a whole beach that I built — and I&#39;ll learn something from each grain and move on.&rdquo;</p>
+      <p>Today she&#39;s a business strategist, real estate investor, and leadership advisor. The thread never changes: helping a few sharp people perform, lead, and live at a higher level through stronger identity, clearer thinking, and aligned action.</p>
+      <a href="#apply" class="btn btn-red" style="align-self:flex-start;margin-top:10px;" onclick="openPopup(event)">Apply for a seat <span class="ar">→</span></a>
+    </div>
+  </div>
+</section>
+
+<section class="sec paper" id="testimonials">
+  <div class="sec-in">
+    <div class="sec-head centered reveal">
+      <span class="tag">In Their Words</span>
+      <h2 class="display d-lg" style="max-width:none;">The results speak. Soon, so will <span class="red">the clients.</span></h2>
+      <p class="lead">Her word isn&#39;t the proof. Theirs is. These are leaders who did the work — and built something they&#39;re proud of on the other side of it.</p>
+    </div>
+    <div class="testi-grid reveal">
+      <div class="testi">
+        <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <div class="big">One of the most valuable investments I made in myself and my business.</div>
+        <p>When I started working with her, I faced challenges in both my professional and personal life. Through her coaching I gained clarity, structure, and a better understanding of the actions I needed to take. She has a unique ability to ask the right questions, challenge limiting beliefs, and provide practical guidance that creates real results. Today I&#39;ve built one of the leading virtual staging companies in the industry — the mindset and strategic thinking she helped me develop played an important role in that journey.</p>
+        <div class="by"><span class="av" style="overflow:hidden;padding:0;"><img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=84&h=84&fit=crop&crop=face" alt="Yassine Mersni" style="width:100%;height:100%;object-fit:cover;display:block;"></span><div><div class="nm">Yassine Mersni</div><div class="ro">President · Meryas Homes</div></div></div>
+      </div>
+      <div class="testi">
+        <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <div class="big">Her impact on my life has been extraordinary.</div>
+        <p>I&#39;ve worked with Yasmine since approximately 2009. Through her expertise in NLP, she has helped both me and my team develop a deeper understanding of how we think, communicate, and approach challenges. Her coaching helped me work through childhood traumas, challenge limiting beliefs, and fundamentally reframe the way I view myself and the world. I can say without hesitation that the work I&#39;ve done with her has been one of the most impactful investments I&#39;ve made in my personal development.</p>
+        <div class="by"><span class="av" style="overflow:hidden;padding:0;"><img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=84&h=84&fit=crop&crop=face" alt="Elias Samir Halwaji Sr." style="width:100%;height:100%;object-fit:cover;display:block;"></span><div><div class="nm">Elias Samir Halwaji Sr.</div><div class="ro">President · MTL Group — Property Management</div></div></div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section class="sec dark" id="events">
+  <div class="sec-in">
+    <div class="sec-head centered reveal">
+      <span class="tag on-dark">On Stage &amp; In the Room</span>
+      <h2 class="display d-lg" style="max-width:none;">She doesn&#39;t just advise.<br>She sets <span class="red">the room.</span></h2>
+      <p class="lead">Between private sessions, Yasmine hosts and headlines the rooms where Quebec&#39;s top brokers, founders, and investors actually meet. Her platform <em>Power by Design</em> brings the work to the stage — and the people who do it together.</p>
+    </div>
+    <div class="events-grid reveal">
+      <div class="ev">
+        <img src="https://d8j0ntlcm91z4.cloudfront.net/user_35NBuSfIPglHIOMZxxqoxDRFcyj/hf_20260630_133226_f9f1abec-67e5-4899-a2d7-1a4518b2cc20.png" alt="Yasmine speaking on stage at a real estate leadership event">
+        <div class="ev-tx">
+          <span class="ev-tag">Keynotes &amp; Workshops</span>
+          <h3>Power by Design — live</h3>
+          <p>Half-day intensives on identity, decision-making, and scaling without burning out —<br>built for leaders who&#39;ve already proven they can win.</p>
+        </div>
+      </div>
+      <div class="ev">
+        <img src="https://d8j0ntlcm91z4.cloudfront.net/user_35NBuSfIPglHIOMZxxqoxDRFcyj/hf_20260630_133244_0f9a0f1d-0132-4001-9436-b7455baf9589.png" alt="Real estate networking event in a luxury penthouse">
+        <div class="ev-tx">
+          <span class="ev-tag">Private Roundtables</span>
+          <h3>The invite-only table</h3>
+          <p>Small, curated evenings where advisory clients and a few sharp guests trade the things you only say off the record.</p>
+        </div>
+      </div>
+    </div>
+    <div class="reveal" style="margin-top:32px;text-align:center;">
+      <p class="lead" style="max-width:52ch;margin:0 auto 28px;">Advisory seats include standing invitations to every room.</p>
+      <a href="#apply" class="btn btn-red" onclick="openPopup(event)">Ask about the next event <span class="ar">→</span></a>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="work">
+  <div class="sec-in">
+
+    <div class="offer">
+      <div class="offer-text reveal">
+        <span class="tag">The Work</span>
+        <h2 class="display d-lg">One table. Ten seats.<br>By <span class="red">application.</span></h2>
+        <p>Not a program. A partnership. Yasmine keeps the circle small on purpose — it&#39;s the only way this work goes deep enough to matter.</p>
+        <p>The results that matter aren&#39;t built in a sprint, so this is long-term by design. Two hours a month of structured time, plus the relief of finally having someone in your corner who has actually built what you&#39;re trying to build.</p>
+        <p>The version of her worth hiring only exists at a small scale. That&#39;s not scarcity — that&#39;s how the work works.</p>
+      </div>
+      <div class="offer-card reveal" style="position:relative;overflow:hidden;">
+        <div style="position:absolute;inset:0;z-index:0;">
+          <video autoplay muted loop playsinline style="width:100%;height:100%;object-fit:cover;opacity:0.5;" id="offerVid">
+            <source src="https://cdn.katalyst-crm.com/t1/GettyImages-1189863249.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div style="position:relative;z-index:1;">
+        <span class="ribbon">Private Advisory</span>
+        <h3>Twice-monthly sessions. A direct line in between.</h3>
+        <p>One-hour Zoom calls, twice a month, plus a direct line for when something can&#39;t wait. Long-term by design.</p>
+        <div class="offer-feat"><b>How you&#39;ll feel</b><span>The relief of finally thinking clearly — and leading from calm, not adrenaline.</span></div>
+        <div class="offer-feat"><b>What changes</b><span>A business that runs on systems and aligned people instead of your constant attention.</span></div>
+        <div class="offer-feat"><b>What you&#39;ll have</b><span>A decoded, repeatable system for your own decisions, leadership, and growth.</span></div>
+        <p class="fine">For established entrepreneurs and leaders ready to evolve. Investment shared on the call. Limited seats, by application.</p>
+        <a href="#apply" class="btn btn-red" onclick="openPopup(event)">Apply for a seat <span class="ar">→</span></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec paper" id="fit">
+  <div class="sec-in">
+    <div class="sec-head reveal">
+      <div>
+        <span class="tag">Honest Fit</span>
+        <h2 class="display d-lg">Let&#39;s save us both<br>the <span class="red">wrong call.</span></h2>
+      </div>
+      <p class="lead">This isn&#39;t for everyone — on purpose. A few honest minutes here saves us both a conversation that was never going to land.</p>
+    </div>
+    <div class="fit reveal">
+      <div class="fit-col yes">
+        <h4>This is for you if</h4>
+        <div class="sub">You see yourself here</div>
+        <div class="fit-li"><span class="ic">✓</span><span>You&#39;ve already built real success — and want the next level, not a turnaround.</span></div>
+        <div class="fit-li"><span class="ic">✓</span><span>You believe the business is only as strong as the person leading it.</span></div>
+        <div class="fit-li"><span class="ic">✓</span><span>You want to grow profitably and calmly — not just bigger.</span></div>
+        <div class="fit-li"><span class="ic">✓</span><span>You&#39;re ready to be honest about what&#39;s working and what isn&#39;t.</span></div>
+      </div>
+      <div class="fit-col no">
+        <h4>This isn&#39;t for you if</h4>
+        <div class="sub">Better to know now</div>
+        <div class="fit-li"><span class="ic">✕</span><span>You want a quick fix or a motivational hit to get through the week.</span></div>
+        <div class="fit-li"><span class="ic">✕</span><span>You&#39;re looking for done-for-you AI consulting — that&#39;s not what this is.</span></div>
+        <div class="fit-li"><span class="ic">✕</span><span>You&#39;re not ready to change how you lead, only what your team does.</span></div>
+        <div class="fit-li"><span class="ic">✕</span><span>You&#39;d rather scale tactics than evolve identity.</span></div>
+      </div>
+    </div>
+    <div class="faq-split reveal">
+      <div class="faq-split-l">
+        <span class="tag">Straight Answers</span>
+        <h2 class="display d-md">Questions you&#39;re probably already asking.</h2>
+      </div>
+      <div class="faq-split-r">
+        <div class="acc">
+          <div class="acc-item open">
+            <button class="acc-trig no-num" onclick="toggleAcc(this)"><span class="acc-ttl">Is this business coaching or life coaching?</span><span class="acc-tg"></span></button>
+            <div class="acc-body"><p>Both — because they&#39;re the same thing. Your business runs on your mindset, your decisions, and your systems. We work all of it.</p></div>
+          </div>
+          <div class="acc-item">
+            <button class="acc-trig no-num" onclick="toggleAcc(this)"><span class="acc-ttl">Do I need to care about AI?</span><span class="acc-tg"></span></button>
+            <div class="acc-body"><p>No. We use systems and AI only where they remove busywork and free your time. They&#39;re tools in the background, never the point.</p></div>
+          </div>
+          <div class="acc-item">
+            <button class="acc-trig no-num" onclick="toggleAcc(this)"><span class="acc-ttl">Why so few clients?</span><span class="acc-tg"></span></button>
+            <div class="acc-body"><p>Because depth doesn&#39;t scale. A small roster is the only way Yasmine works — and the only way you get the version of her worth hiring.</p></div>
+          </div>
+          <div class="acc-item">
+            <button class="acc-trig no-num" onclick="toggleAcc(this)"><span class="acc-ttl">What&#39;s the time commitment?</span><span class="acc-tg"></span></button>
+            <div class="acc-body"><p>One hour, twice a month, plus a direct line between calls. Long-term — because real change isn&#39;t a sprint.</p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="audit" id="audit">
+  <div class="audit-grid">
+    <div class="audit-l reveal">
+      <span class="tag on-dark">Start Small</span>
+      <h2 class="display d-lg">Find your leverage<br>in <span class="red">ten minutes.</span></h2>
+      <p>Not ready for a call? Start here. The Power Leverage Audit is a short self-assessment built on the Whole Life Power System. It walks you through each category of your life and business — and shows you, in one page, where your power is compounding and where it&#39;s quietly leaking.</p>
+      <ul class="audit-list">
+        <li>A one-page map of your strongest and weakest power categories</li>
+        <li>The single highest-ROI area to focus on first</li>
+        <li>A clear sense of what &ldquo;the next level&rdquo; actually means for you</li>
+      </ul>
+      <a href="#" class="btn btn-red" onclick="openPopup(event)">Take the 10-minute audit <span class="ar">→</span></a>
+    </div>
+    <div class="audit-r reveal">
+      <img src="https://d8j0ntlcm91z4.cloudfront.net/user_35NBuSfIPglHIOMZxxqoxDRFcyj/hf_20260630_115426_a26ac56e-df40-45f5-984e-e357d804b39e.png" alt="Abstract sculptural form">
+    </div>
+  </div>
+</section>
+
+<section class="sec apply" id="apply">
+  <div class="sec-in">
+    <div class="apply-grid">
+      <div class="apply-l reveal">
+        <span class="tag">Apply</span>
+        <h2 class="display d-md">Stop chasing the next level.<br><span class="red">Start building it.</span></h2>
+        <p>A short application, then a real conversation. We&#39;ll both know quickly if it&#39;s a fit — no pitch, no pressure.</p>
+        <p style="margin-top:24px;font-size:0.84rem;letter-spacing:0.06em;text-transform:uppercase;color:var(--red);font-weight:700;">Ten seats · By application · Long-term by design</p>
+      </div>
+      <div class="form reveal" id="applyForm">
+        <span class="fl">Full name</span>
+        <input type="text" placeholder="Your name">
+        <span class="fl">Email</span>
+        <input type="email" placeholder="you@company.com">
+        <span class="fl">Company / role</span>
+        <input type="text" placeholder="What you lead">
+        <span class="fl">What&#39;s the one thing holding you back?</span>
+        <textarea placeholder="A sentence or two is plenty."></textarea>
+        <a href="#" class="btn btn-red" onclick="event.preventDefault();alert('Thanks — your application has been noted. (Demo form)');">Submit application <span class="ar">→</span></a>
+        <p class="fine">No pitch. No pressure. If it&#39;s a fit, you&#39;ll know.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec close" id="close" style="position:relative;overflow:hidden;background:var(--ink);">
+  <div style="position:absolute;inset:0;z-index:0;">
+    <img src="https://cdn.katalyst-crm.com/t1/99d8e4cb8b46d0be24248a68bf59b08a_LE_upscale_gentle.jpg" alt="" style="width:100%;height:100%;object-fit:cover;opacity:0.35;">
+    <div style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(20,20,20,0.75) 0%,rgba(20,20,20,0.55) 50%,rgba(20,20,20,0.85) 100%);"></div>
+  </div>
+  <div class="close-in reveal" style="position:relative;z-index:1;">
+    <h2 class="display d-lg" style="white-space:nowrap;">Stop reacting. <span class="red">Start leading.</span></h2>
+    <p class="sub">&ldquo;Never break. The difference between the ones who make it and the ones who don&#39;t was never talent — it&#39;s that they refused to fold one day too early.&rdquo;</p>
+    <ul class="close-list">
+    </ul>
+    <div class="close-btns">
+      <a href="#apply" class="btn btn-red" onclick="openPopup(event)">Apply for a private call <span class="ar">→</span></a>
+      <a href="#audit" class="btn btn-ghost lt">Take the audit first</a>
+    </div>
+    <p class="close-fine">Ten seats · By application · Long-term by design</p>
+  </div>
+</section>
+
+<footer>
+  <div class="ft-in">
+    <div class="ft-brand">
+      <a href="#top" class="logo"><img src="https://cdn.katalyst-crm.com/t1/Group%201.png" alt="Powerhouse 360" style="height:29px;width:auto;display:block;"></a>
+      <p>Strategic Growth &amp; Leadership Advisor. Private advising for proven leaders ready to take themselves — and their business — to the next level on purpose.</p>
+      <a href="mailto:hello@powerhouse360.com" class="mail">hello@powerhouse360.com</a>
+    </div>
+    <div class="ft-col">
+      <h5>Navigate</h5>
+      <a href="#top">Home</a>
+      <a href="#problem">The Real Problem</a>
+      <a href="#method">The POWER Method</a>
+      <a href="#work">Private Advisory</a>
+      <a href="#story">About Yasmine</a>
+    </div>
+    <div class="ft-col">
+      <h5>Start Here</h5>
+      <a href="#audit">Power Leverage Audit</a>
+      <a href="#apply">Apply for a Seat</a>
+      <a href="#testimonials">Client Stories</a>
+      <a href="#events">Events &amp; Speaking</a>
+      <a href="#fit">Is It a Fit?</a>
+    </div>
+    <div class="ft-col">
+      <h5>Legal</h5>
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms &amp; Conditions</a>
+      <a href="#apply">Contact</a>
+    </div>
+  </div>
+  <div class="ft-bot">
+    <span>&copy; 2026 Powerhouse360 · Yasmine Mardelli · Founder &amp; Strategic Growth Advisor</span>
+    <span style="font-size:0.72rem;font-weight:700;letter-spacing:0.24em;text-transform:uppercase;color:rgba(255,255,255,0.55);">Built by Katek</span>
+    <span class="links"><a href="#">Privacy</a><a href="#">Terms</a><a href="#apply">Contact</a></span>
+  </div>
+</footer>
+
+<div class="pop-ov" id="popup">
+  <div class="pop">
+    <div class="pop-head">
+      <div class="bg"><img src="https://d8j0ntlcm91z4.cloudfront.net/user_35NBuSfIPglHIOMZxxqoxDRFcyj/hf_20260630_095112_fb33da32-1563-4282-875a-e7a79a5a0817.png" alt=""></div>
+      <button class="pop-x" onclick="closePopup()">&#x2715;</button>
+      <div class="ct">
+        <span class="tag on-dark">Power Leverage Audit</span>
+        <h3>See what you&#39;re already<br>doing right — in ten minutes.</h3>
+      </div>
+    </div>
+    <div class="pop-bd">
+      <p>A short self-assessment built on the Whole Life Power System. It shows you, in one page, where your power is compounding — and where it&#39;s quietly leaking.</p>
+      <ul class="pop-list">
+        <li>A map of your strongest and weakest power categories</li>
+        <li>The single highest-ROI area to focus on first</li>
+        <li>A clear sense of what &ldquo;the next level&rdquo; actually means for you</li>
+      </ul>
+      <span class="fl">Full name</span>
+      <input type="text" placeholder="Your name">
+      <span class="fl">Email</span>
+      <input type="email" placeholder="you@company.com">
+      <a href="#" class="btn btn-red" onclick="event.preventDefault();alert('Thanks — check your inbox for the audit. (Demo form)');">Take the 10-minute audit <span class="ar">→</span></a>
+      <p class="fine">No pitch. No pressure. If it&#39;s a fit, you&#39;ll know.</p>
+    </div>
+  </div>
+</div>
+
+<script>
+function toggleAcc(btn){
+  var item=btn.closest('.acc-item');
+  var parent=item.closest('.acc');
+  var open=item.classList.contains('open');
+  parent.querySelectorAll(':scope > .acc-item').forEach(function(i){i.classList.remove('open');});
+  if(!open) item.classList.add('open');
+}
+function toggleMenu(){
+  var links=document.querySelector('.nav-links');
+  var burger=document.querySelector('.burger');
+  links.classList.toggle('open');
+  burger.classList.toggle('open');
+  document.body.style.overflow=links.classList.contains('open')?'hidden':'';
+}
+document.querySelectorAll('.nav-links a').forEach(function(a){
+  a.addEventListener('click',function(){
+    document.querySelector('.nav-links').classList.remove('open');
+    document.querySelector('.burger').classList.remove('open');
+    document.body.style.overflow='';
+  });
+});
+function openPopup(e){if(e)e.preventDefault();document.getElementById('popup').classList.add('open');}
+function closePopup(){document.getElementById('popup').classList.remove('open');}
+document.getElementById('popup').addEventListener('click',function(e){if(e.target===this)closePopup();});
+document.addEventListener('keydown',function(e){if(e.key==='Escape')closePopup();});
+
+var io=new IntersectionObserver(function(entries){
+  entries.forEach(function(en){if(en.isIntersecting){en.target.classList.add('in');io.unobserve(en.target);}});
+},{threshold:0.12});
+document.querySelectorAll('.reveal').forEach(function(el){io.observe(el);});
+
+/* nav: transparent over hero, solid once scrolled */
+var navEl=document.querySelector('nav');
+function onScroll(){if(window.scrollY>60){navEl.classList.add('scrolled');}else{navEl.classList.remove('scrolled');}}
+onScroll();
+window.addEventListener('scroll',onScroll,{passive:true});
+</script>
+</body>
+</html>
