@@ -158,14 +158,19 @@ nav.scrolled{background:var(--ink);height:70px;border-bottom-color:var(--line-d)
 .dark .acc-body p{color:var(--muted-d);}
 @media(max-width:680px){.acc-body p{padding:0 24px 26px 24px;}}
 
-.method-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line-d);border:1px solid var(--line-d);}
+.method-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:1px;background:var(--line-d);border:1px solid var(--line-d);}
+#method .sec-in{max-width:none;}
+#method .sec-head.centered{max-width:920px;margin-left:auto;margin-right:auto;}
+@media(min-width:1041px) and (max-width:1360px){.method-grid{grid-template-columns:1fr 1fr;}}
+
 .m-card{background:var(--ink);display:flex;flex-direction:column;}
 .m-card-img{position:relative;aspect-ratio:4/3;overflow:hidden;background:#000;}
 .m-card-img img{width:100%;height:100%;object-fit:cover;transition:transform .8s ease;opacity:0.85;}
 .m-card:hover .m-card-img img{transform:scale(1.06);opacity:1;}
 .m-card-img .pin{position:absolute;top:16px;left:16px;width:9px;height:9px;background:var(--red);z-index:2;}
 .m-card-bd{padding:26px 24px 28px;display:flex;flex-direction:column;flex:1;}
-.m-letter{font-family:'Bebas Neue',sans-serif;font-size:1.7rem;letter-spacing:0.04em;color:#fff;line-height:1;}
+.m-letter{font-family:'Bebas Neue',sans-serif;font-size:1.42rem;letter-spacing:0.03em;color:#fff;line-height:1.04;display:block;}
+.m-letter .red{font-size:2rem;line-height:0.8;vertical-align:-2px;margin-right:3px;}
 .m-tag{font-size:0.6rem;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;color:#FF4040;margin:8px 0 14px;}
 .m-card-bd h3{font-family:'Bebas Neue',sans-serif;font-weight:400;font-size:1.18rem;letter-spacing:0.02em;text-transform:uppercase;color:rgba(255,255,255,0.86);line-height:1.1;margin-bottom:14px;}
 .m-card-bd p{font-size:0.85rem;color:rgba(255,255,255,0.6);line-height:1.6;margin-bottom:18px;flex:1;}
@@ -223,12 +228,17 @@ nav.scrolled{background:var(--ink);height:70px;border-bottom-color:var(--line-d)
 .paper .img-band,.sec:not(.dark) .img-band{border-color:var(--line-l);}
 
 /* events / speaking gallery */
-.events-grid{display:grid;grid-template-columns:1.4fr 1fr;gap:1px;background:var(--line-l);border:1px solid var(--line-l);}
-.ev{position:relative;overflow:hidden;min-height:300px;background:#000;}
-.ev img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform 1s ease;}
+.events-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line-l);border:1px solid var(--line-l);}
+.ev-link{display:inline-flex;align-items:center;gap:9px;margin-top:16px;font-family:'DM Sans',sans-serif;font-size:0.72rem;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:#fff;border-bottom:1.5px solid var(--red);padding-bottom:4px;transition:color .2s,border-color .2s;}
+.ev-link:hover{color:#FF4040;}
+.ev-link .ar{font-size:0.9rem;transition:transform .25s;}
+.ev-link:hover .ar{transform:translateX(4px);}
+@media(max-width:960px){.events-grid{grid-template-columns:1fr;}}
+.ev{position:relative;overflow:hidden;min-height:340px;background:#000;display:flex;flex-direction:column;}
+.ev img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform 1s ease;filter:brightness(0.68) saturate(0.92);}
 .ev:hover img{transform:scale(1.05);}
-.ev::after{content:'';position:absolute;inset:0;background:linear-gradient(0deg,rgba(20,20,20,0.85) 0%,rgba(20,20,20,0.1) 55%);}
-.ev-tx{position:absolute;left:0;right:0;bottom:0;z-index:2;padding:clamp(22px,2.6vw,34px);}
+.ev::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(20,20,20,0.82) 0%,rgba(20,20,20,0.55) 45%,rgba(20,20,20,0.35) 75%,rgba(20,20,20,0.55) 100%);}
+.ev-tx{position:relative;z-index:2;padding:clamp(24px,2.6vw,34px);}
 .ev-tag{display:inline-block;font-size:0.58rem;font-weight:700;letter-spacing:0.2em;text-transform:uppercase;color:#fff;background:var(--red);padding:6px 12px;margin-bottom:14px;}
 .ev h3{font-family:'Bebas Neue',sans-serif;font-weight:400;font-size:clamp(1.5rem,2.4vw,2.1rem);letter-spacing:0.02em;text-transform:uppercase;color:#fff;line-height:1;margin-bottom:10px;}
 .ev p{font-size:0.9rem;color:#fff;line-height:1.55;max-width:46ch;}
@@ -295,6 +305,12 @@ nav.scrolled{background:var(--ink);height:70px;border-bottom-color:var(--line-d)
 .form textarea{resize:vertical;min-height:96px;}
 .form .btn{width:100%;justify-content:center;margin-top:24px;}
 .form .fine{font-size:0.74rem;color:var(--muted);margin-top:14px;text-align:center;line-height:1.5;}
+.apply-confirm{display:none;padding:8px 0 4px;}
+.apply-confirm .ac-mark{width:48px;height:48px;background:var(--red);color:#fff;display:flex;align-items:center;justify-content:center;font-size:1.35rem;margin-bottom:18px;}
+.apply-confirm h4{font-family:'Bebas Neue',sans-serif;font-weight:400;font-size:1.65rem;letter-spacing:0.02em;text-transform:uppercase;color:var(--ink);line-height:1;margin-bottom:10px;}
+.apply-confirm p{font-size:0.98rem;color:var(--muted);line-height:1.7;}
+.form.submitted .fl,.form.submitted input,.form.submitted textarea,.form.submitted .btn,.form.submitted .fine{display:none;}
+.form.submitted .apply-confirm{display:block;}
 @media(max-width:860px){.apply-grid{grid-template-columns:1fr;gap:36px;}}
 
 .close{background:var(--ink);color:#fff;text-align:center;}
@@ -372,7 +388,7 @@ footer{background:#0C0C0C;color:rgba(255,255,255,0.6);padding:72px clamp(20px,4v
 .acc-2col .acc:first-child{border-right:none;}
 @media(max-width:740px){.acc-2col{grid-template-columns:1fr;gap:0;}}
 
-.reveal{opacity:0;transform:translateY(24px);transition:opacity .7s ease,transform .7s ease;}
+.reveal{opacity:0;transform:translateY(14px);transition:opacity .45s ease,transform .45s ease;}
 .reveal.in{opacity:1;transform:none;}
 @media(prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none;}.m-card-img img,.acc-body,.btn .ar{transition:none;}}
 
@@ -487,7 +503,7 @@ footer{background:#0C0C0C;color:rgba(255,255,255,0.6);padding:72px clamp(20px,4v
 
 <nav>
   <a href="#top" class="logo">
-    <img src="https://cdn.katalyst-crm.com/t1/Group%201.png" alt="Powerhouse 360" style="height:30px;width:auto;display:block;">
+    <img src="https://dashboard.katalyst-crm.com/files/t1/logoyasinemardelli.png" alt="Yasmine Mardelli — Powerhouse 360" style="height:36px;width:auto;max-width:190px;display:block;">
   </a>
   <ul class="nav-links">
     <li><a href="#problem">The Problem</a></li>
@@ -512,11 +528,11 @@ footer{background:#0C0C0C;color:rgba(255,255,255,0.6);padding:72px clamp(20px,4v
       <a href="#apply" class="btn btn-red" onclick="openPopup(event)">Start your application <span class="ar">→</span></a>
       <a href="#method" class="btn btn-ghost lt">Read the method first</a>
     </div>
-    <p class="hero-micro"><b>Yasmine Mardelli</b> — partner at Royal LePage du Quartier, a billion-dollar-a-year real estate company, eight consecutive years of national awards.</p>
+    <p class="hero-micro"><b>Yasmine Mardelli</b> — partner at Royal LePage du Quartier, a billion-dollar-a-year real estate company, ten consecutive years of national awards.</p>
   </div>
   <div class="hero-strip">
     <div class="hero-strip-in">
-      <div class="hs-cell"><span class="mark"></span><div><h4>$1B / year managed</h4><p>Sales volume sustained for 8+ consecutive years.</p></div></div>
+      <div class="hs-cell"><span class="mark"></span><div><h4>$1B / year managed</h4><p>Sales volume sustained for 10+ consecutive years.</p></div></div>
       <div class="hs-cell"><span class="mark"></span><div><h4>10 clients — by design</h4><p>A deliberate cap. Depth over volume, always.</p></div></div>
       <div class="hs-cell"><span class="mark"></span><div><h4>A real conversation</h4><p>A short application, then a direct call. No pitch.</p></div></div>
     </div>
@@ -545,7 +561,7 @@ footer{background:#0C0C0C;color:rgba(255,255,255,0.6);padding:72px clamp(20px,4v
           <div class="stat-side-item">
             <div class="sbi-lbl">Sustained scale</div>
             <div class="sbi-num">$<em>1</em>B</div>
-            <div class="sbi-cap">Annual sales volume, eight consecutive years.</div>
+            <div class="sbi-cap">Annual sales volume, ten consecutive years.</div>
           </div>
           <div class="stat-side-item">
             <div class="sbi-lbl">Built from 22</div>
@@ -554,7 +570,7 @@ footer{background:#0C0C0C;color:rgba(255,255,255,0.6);padding:72px clamp(20px,4v
           </div>
           <div class="stat-side-item">
             <div class="sbi-lbl">Recognition</div>
-            <div class="sbi-num"><em>8</em>+</div>
+            <div class="sbi-num"><em>10</em>+</div>
             <div class="sbi-cap">National awards, won consecutively.</div>
           </div>
           <div class="stat-side-item">
@@ -619,41 +635,51 @@ footer{background:#0C0C0C;color:rgba(255,255,255,0.6);padding:72px clamp(20px,4v
       <div class="m-card">
         <div class="m-card-img"><span class="pin"></span><img src="https://d8j0ntlcm91z4.cloudfront.net/user_35NBuSfIPglHIOMZxxqoxDRFcyj/hf_20260630_193928_19ace6d8-e314-460c-8a23-0d1cfe7df5ba.png" alt="One-on-one business coaching session"></div>
         <div class="m-card-bd">
-          <span class="m-letter">C.A.T.C.H.</span>
-          <span class="m-tag">The Cornerstone</span>
+          <span class="m-letter"><span class="red">P</span> — Personal Power</span>
+          <span class="m-tag">The C.A.T.C.H. Method</span>
           <h3>Catch yourself doing it right</h3>
-          <p>We train your brain to notice the moments you act at your best — then claim them as identity, not luck. You&#39;ll start banking your wins and replicating the pattern on purpose.</p>
-          <div class="m-walk"><b>You walk away with</b>Confidence sourced from evidence — and a repeatable pattern of your own best behavior.</div>
+          <p>We train your brain to notice the moments you act at your best, then claim them as identity, not luck. You&#39;ll start banking your wins and replicating the pattern on purpose.</p>
+          <div class="m-walk"><b>You walk away with</b>Confidence sourced from evidence, and a repeatable pattern of your own best behavior.</div>
         </div>
       </div>
       <div class="m-card">
         <div class="m-card-img"><span class="pin"></span><img src="https://d8j0ntlcm91z4.cloudfront.net/user_35NBuSfIPglHIOMZxxqoxDRFcyj/hf_20260630_193934_61ddeb16-ac57-4175-8af9-d45475a5ce38.png" alt="Team strategy workshop aligning on a framework"></div>
         <div class="m-card-bd">
-          <span class="m-letter">C.L.E.A.R.</span>
-          <span class="m-tag">Force Multiplier</span>
+          <span class="m-letter"><span class="red">O</span> — Operational Leverage</span>
+          <span class="m-tag">The C.L.E.A.R. Framework</span>
           <h3>Clarity as a force multiplier</h3>
           <p>We clarify what you actually want, find where decisions are stuck, eliminate the friction draining you, align everything to the vision, and reinforce it with systems. You cannot scale confusion.</p>
           <div class="m-walk"><b>You walk away with</b>Laser priorities, fewer open loops, and a business pointed in one direction.</div>
         </div>
       </div>
       <div class="m-card">
-        <div class="m-card-img"><span class="pin"></span><img src="https://d8j0ntlcm91z4.cloudfront.net/user_35NBuSfIPglHIOMZxxqoxDRFcyj/hf_20260630_193939_bbfcf490-41f3-4ef2-9808-50bd85fcde11.png" alt="Focused collaboration reviewing a plan"></div>
+        <div class="m-card-img"><span class="pin"></span><img src="https://d8j0ntlcm91z4.cloudfront.net/user_35NBuSfIPglHIOMZxxqoxDRFcyj/hf_20260630_193947_476535c9-bdcb-4808-ad4a-e2ba765ba012.png" alt="Business roundtable discussion"></div>
         <div class="m-card-bd">
-          <span class="m-letter">Reset</span>
-          <span class="m-tag">Decision Reset</span>
-          <h3>Power under pressure</h3>
-          <p>We interrupt the reactivity and decision fatigue that quietly runs high performers into the ground. Pause, then power, then precision. You&#39;ll make heavy calls from a regulated, deliberate place.</p>
-          <div class="m-walk"><b>You walk away with</b>Faster, cleaner, higher-quality decisions when the stakes are highest.</div>
+          <span class="m-letter"><span class="red">W</span> — Whole Life Power</span>
+          <span class="m-tag">The Whole Life Power System</span>
+          <h3>Nothing left to leak</h3>
+          <p>Every category of your life either compounds your power or taxes it. We map them all: physical, mental, identity, relational, financial, and future, so you grow congruently instead of self-sabotaging elsewhere.</p>
+          <div class="m-walk"><b>You walk away with</b>A life that feeds your performance instead of fighting it.</div>
         </div>
       </div>
       <div class="m-card">
-        <div class="m-card-img"><span class="pin"></span><img src="https://d8j0ntlcm91z4.cloudfront.net/user_35NBuSfIPglHIOMZxxqoxDRFcyj/hf_20260630_193947_476535c9-bdcb-4808-ad4a-e2ba765ba012.png" alt="Business roundtable discussion"></div>
+        <div class="m-card-img"><span class="pin"></span><img src="https://d8j0ntlcm91z4.cloudfront.net/user_35NBuSfIPglHIOMZxxqoxDRFcyj/hf_20260831_092819_7500cc56-1940-4878-b1e8-6da2467dc1a0.png" alt="Aligning identity, decisions, and energy in one direction"></div>
         <div class="m-card-bd">
-          <span class="m-letter">Whole</span>
-          <span class="m-tag">Whole Life Power</span>
-          <h3>Nothing left to leak</h3>
-          <p>Every category of your life either compounds your power or taxes it. We map them all — physical, mental, identity, relational, financial, future — so you grow congruently instead of self-sabotaging elsewhere.</p>
-          <div class="m-walk"><b>You walk away with</b>A life that feeds your performance instead of fighting it.</div>
+          <span class="m-letter"><span class="red">E</span> — Energetic Congruence</span>
+          <span class="m-tag">The Congruent Power Framework</span>
+          <h3>Aligned, not fragmented</h3>
+          <p>High performers can work harder than anyone and still create no real momentum. We find where you&#39;re fragmented, across identity, decisions, emotion, strategy, or energy, and close the gap before it quietly drains your results.</p>
+          <div class="m-walk"><b>You walk away with</b>Effort that finally compounds instead of leaking out sideways.</div>
+        </div>
+      </div>
+      <div class="m-card">
+        <div class="m-card-img"><span class="pin"></span><img src="https://d8j0ntlcm91z4.cloudfront.net/user_35NBuSfIPglHIOMZxxqoxDRFcyj/hf_20260630_193939_bbfcf490-41f3-4ef2-9808-50bd85fcde11.png" alt="Focused collaboration reviewing a plan"></div>
+        <div class="m-card-bd">
+          <span class="m-letter"><span class="red">R</span> — Regulated Reset</span>
+          <span class="m-tag">The Decision Reset Framework</span>
+          <h3>Power under pressure</h3>
+          <p>We interrupt the reactivity and decision fatigue that quietly runs high performers into the ground. Pause, then power, then precision. You&#39;ll make heavy calls from a regulated, deliberate place.</p>
+          <div class="m-walk"><b>You walk away with</b>Faster, cleaner, higher-quality decisions when the stakes are highest.</div>
         </div>
       </div>
     </div>
@@ -671,21 +697,21 @@ footer{background:#0C0C0C;color:rgba(255,255,255,0.6);padding:72px clamp(20px,4v
     <div class="cmp reveal">
       <div class="cmp-col them">
         <h4>What usually happens</h4>
-        <div class="cmp-row"><span class="s">—</span><span>Coaching that opens by cataloguing everything you&#39;re doing wrong.</span></div>
-        <div class="cmp-row"><span class="s">—</span><span>Motivation that fades by Monday.</span></div>
-        <div class="cmp-row"><span class="s">—</span><span>Generic &ldquo;winning mindset&rdquo; content, free all over the internet.</span></div>
-        <div class="cmp-row"><span class="s">—</span><span>Advice that lives only in business, ignoring the life around it.</span></div>
-        <div class="cmp-row"><span class="s">—</span><span>AI bolted on as the headline, obsolete in a month.</span></div>
-        <div class="cmp-row"><span class="s">—</span><span>A coach who studied success from the outside.</span></div>
+        <div class="cmp-row"><span class="s">✗</span><span>Coaching that opens by cataloguing everything you&#39;re doing wrong.</span></div>
+        <div class="cmp-row"><span class="s">✗</span><span>Motivation that fades by Monday.</span></div>
+        <div class="cmp-row"><span class="s">✗</span><span>Generic &ldquo;winning mindset&rdquo; content, free all over the internet.</span></div>
+        <div class="cmp-row"><span class="s">✗</span><span>Advice that lives only in business, ignoring the life around it.</span></div>
+        <div class="cmp-row"><span class="s">✗</span><span>AI bolted on as the headline, obsolete in a month.</span></div>
+        <div class="cmp-row"><span class="s">✗</span><span>A coach who studied success from the outside.</span></div>
       </div>
       <div class="cmp-col us">
         <h4>What happens here</h4>
-        <div class="cmp-row"><span class="s">→</span><span>We start by naming what you&#39;re already doing right — then build on it.</span></div>
-        <div class="cmp-row"><span class="s">→</span><span>Frameworks you can run again and again, long after our call ends.</span></div>
-        <div class="cmp-row"><span class="s">→</span><span>A decade of building a billion-dollar company, decoded into a system.</span></div>
-        <div class="cmp-row"><span class="s">→</span><span>Every category of your life mapped — they all feed or tax your power.</span></div>
-        <div class="cmp-row"><span class="s">→</span><span>Systems and AI used quietly, only to free you from repetitive decisions.</span></div>
-        <div class="cmp-row"><span class="s">→</span><span>A founder who runs $1B in sales and teaches from the inside.</span></div>
+        <div class="cmp-row"><span class="s">✓</span><span>We start by naming what you&#39;re already doing right — then build on it.</span></div>
+        <div class="cmp-row"><span class="s">✓</span><span>Frameworks you can run again and again, long after our call ends.</span></div>
+        <div class="cmp-row"><span class="s">✓</span><span>A decade of building a billion-dollar company, decoded into a system.</span></div>
+        <div class="cmp-row"><span class="s">✓</span><span>Every category of your life mapped — they all feed or tax your power.</span></div>
+        <div class="cmp-row"><span class="s">✓</span><span>Systems and AI used quietly, only to free you from repetitive decisions.</span></div>
+        <div class="cmp-row"><span class="s">✓</span><span>A founder who runs $1B in sales and teaches from the inside.</span></div>
       </div>
     </div>
   </div>
@@ -694,7 +720,7 @@ footer{background:#0C0C0C;color:rgba(255,255,255,0.6);padding:72px clamp(20px,4v
 <section id="story">
   <div class="split">
     <div class="split-img reveal">
-      <img src="https://cdn.katalyst-crm.com/t1/IMGL1652.jpg" alt="Yasmine Mardelli, real estate executive and leadership advisor">
+      <img src="https://dashboard.katalyst-crm.com/files/t1/ea23291c-fe76-427e-8bf5-dce451126c58.png" alt="Yasmine Mardelli, real estate executive and leadership advisor">
       <div class="ovl"></div>
       <span class="qt">&ldquo;From nothing to a billion —<br>by choice, not luck.&rdquo;</span>
     </div>
@@ -740,7 +766,7 @@ footer{background:#0C0C0C;color:rgba(255,255,255,0.6);padding:72px clamp(20px,4v
     <div class="sec-head centered reveal">
       <span class="tag on-dark">On Stage &amp; In the Room</span>
       <h2 class="display d-lg" style="max-width:none;">She doesn&#39;t just advise.<br>She sets <span class="red">the room.</span></h2>
-      <p class="lead">Between private sessions, Yasmine hosts and headlines the rooms where Quebec&#39;s top brokers, founders, and investors actually meet. Her platform <em>Power by Design</em> brings the work to the stage — and the people who do it together.</p>
+      <p class="lead">Between private sessions, Yasmine hosts and headlines the rooms where Quebec&#39;s top brokers, founders, and investors actually meet. Her platform <em>Power by Design</em> brings the work to the stage, the podcast, and the people who do it together.</p>
     </div>
     <div class="events-grid reveal">
       <div class="ev">
@@ -757,6 +783,15 @@ footer{background:#0C0C0C;color:rgba(255,255,255,0.6);padding:72px clamp(20px,4v
           <span class="ev-tag">Private Roundtables</span>
           <h3>The invite-only table</h3>
           <p>Small, curated evenings where advisory clients and a few sharp guests trade the things you only say off the record.</p>
+        </div>
+      </div>
+      <div class="ev">
+        <img src="https://d8j0ntlcm91z4.cloudfront.net/user_35NBuSfIPglHIOMZxxqoxDRFcyj/hf_20260831_092819_af1bcd0c-b8c7-402a-a649-aa9a0e3d4139.png" alt="Mindset Mondays — Power by Design podcast studio">
+        <div class="ev-tx">
+          <span class="ev-tag">Mindset Mondays</span>
+          <h3>Power by Design — on air</h3>
+          <p>Every Monday, the thinking behind the $1B: identity, decisions, and leading from regulated power. No filler, no hype. 21 episodes and counting.</p>
+          <a href="https://open.spotify.com/episode/4dPdS5kMjGxnCiNiOF21lb" target="_blank" rel="noopener" class="ev-link">Listen on Spotify <span class="ar">→</span></a>
         </div>
       </div>
     </div>
@@ -820,10 +855,10 @@ footer{background:#0C0C0C;color:rgba(255,255,255,0.6);padding:72px clamp(20px,4v
       <div class="fit-col no">
         <h4>This isn&#39;t for you if</h4>
         <div class="sub">Better to know now</div>
-        <div class="fit-li"><span class="ic">✕</span><span>You want a quick fix or a motivational hit to get through the week.</span></div>
-        <div class="fit-li"><span class="ic">✕</span><span>You&#39;re looking for done-for-you AI consulting — that&#39;s not what this is.</span></div>
-        <div class="fit-li"><span class="ic">✕</span><span>You&#39;re not ready to change how you lead, only what your team does.</span></div>
-        <div class="fit-li"><span class="ic">✕</span><span>You&#39;d rather scale tactics than evolve identity.</span></div>
+        <div class="fit-li"><span class="ic">✗</span><span>You want a quick fix or a motivational hit to get through the week.</span></div>
+        <div class="fit-li"><span class="ic">✗</span><span>You&#39;re looking for done-for-you AI consulting — that&#39;s not what this is.</span></div>
+        <div class="fit-li"><span class="ic">✗</span><span>You&#39;re not ready to change how you lead, only what your team does.</span></div>
+        <div class="fit-li"><span class="ic">✗</span><span>You&#39;d rather scale tactics than evolve identity.</span></div>
       </div>
     </div>
     <div class="faq-split reveal">
@@ -892,8 +927,13 @@ footer{background:#0C0C0C;color:rgba(255,255,255,0.6);padding:72px clamp(20px,4v
         <input type="text" placeholder="What you lead">
         <span class="fl">What&#39;s the one thing holding you back?</span>
         <textarea placeholder="A sentence or two is plenty."></textarea>
-        <a href="#" class="btn btn-red" onclick="event.preventDefault();alert('Thanks — your application has been noted. (Demo form)');">Submit application <span class="ar">→</span></a>
+        <a href="#" class="btn btn-red" onclick="submitApplication(event)">Submit application <span class="ar">→</span></a>
         <p class="fine">No pitch. No pressure. If it&#39;s a fit, you&#39;ll know.</p>
+        <div class="apply-confirm" id="applyConfirm">
+          <div class="ac-mark">&#10003;</div>
+          <h4>Application received.</h4>
+          <p>You&#39;ll hear back soon to confirm your seat.</p>
+        </div>
       </div>
     </div>
   </div>
@@ -920,7 +960,7 @@ footer{background:#0C0C0C;color:rgba(255,255,255,0.6);padding:72px clamp(20px,4v
 <footer>
   <div class="ft-in">
     <div class="ft-brand">
-      <a href="#top" class="logo"><img src="https://cdn.katalyst-crm.com/t1/Group%201.png" alt="Powerhouse 360" style="height:29px;width:auto;display:block;"></a>
+      <a href="#top" class="logo"><img src="https://dashboard.katalyst-crm.com/files/t1/logoyasinemardelli.png" alt="Yasmine Mardelli — Powerhouse 360" style="height:34px;width:auto;max-width:190px;display:block;"></a>
       <p>Strategic Growth &amp; Leadership Advisor. Private advising for proven leaders ready to take themselves — and their business — to the next level on purpose.</p>
       <a href="mailto:hello@powerhouse360.com" class="mail">hello@powerhouse360.com</a>
     </div>
@@ -1003,6 +1043,16 @@ document.querySelectorAll('.nav-links a').forEach(function(a){
     document.body.style.overflow='';
   });
 });
+function submitApplication(e){
+  if(e)e.preventDefault();
+  var form=document.getElementById('applyForm');
+  var name=form.querySelector('input[type=text]');
+  var email=form.querySelector('input[type=email]');
+  var emailOk=email&&/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.value.trim());
+  if(!name||!name.value.trim()){name&&name.focus();return;}
+  if(!emailOk){email&&email.focus();return;}
+  form.classList.add('submitted');
+}
 function openPopup(e){if(e)e.preventDefault();document.getElementById('popup').classList.add('open');}
 function closePopup(){document.getElementById('popup').classList.remove('open');}
 document.getElementById('popup').addEventListener('click',function(e){if(e.target===this)closePopup();});
@@ -1010,7 +1060,7 @@ document.addEventListener('keydown',function(e){if(e.key==='Escape')closePopup()
 
 var io=new IntersectionObserver(function(entries){
   entries.forEach(function(en){if(en.isIntersecting){en.target.classList.add('in');io.unobserve(en.target);}});
-},{threshold:0.12});
+},{threshold:0,rootMargin:'0px 0px 15% 0px'});
 document.querySelectorAll('.reveal').forEach(function(el){io.observe(el);});
 
 /* nav: transparent over hero, solid once scrolled */
